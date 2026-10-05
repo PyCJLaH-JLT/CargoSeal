@@ -75,6 +75,23 @@ void cs_container_pir(cs_container *s, bool high, uint32_t now)
     if (cs_pir_sample(&s->pir, high) && s->mode == CS_INSTALLED)
         emit(s, CS_NEARBY, 1, 0, true, now);
 }
+void cs_container_mode(cs_container *s, cs_mode mode, uint32_t now)
+{
+    if (mode == s->mode) return;
+    cs_mode previous = s->mode;
+    s->mode = mode;
+    s->motion_confirm.running = s->motion_quiet.running = s->impact_quiet.running = false;
+    s->motion_normal = false;
+    emit(s, CS_MODE_CHANGE, (int32_t)previous, (int32_t)mode, true, now);
+    if (mode == CS_INSTALLED && s->pir.high) emit(s, CS_NEARBY, 1, 0, true, now);
+}
+bool cs_container_ack(cs_container *s)
+{
+    if (!s->imu_valid || !s->light_valid || !s->light_ready ||
+        !s->motion_normal || !s->light_normal) return false;
+    s->alarm = false;
+    return true;
+}
 void cs_container_light(cs_container *s, const cs_light *light, uint32_t now)
 {
     s->light_valid = light->valid; s->light_ready = light->ready;
