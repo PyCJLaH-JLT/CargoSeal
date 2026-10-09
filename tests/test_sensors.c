@@ -3,13 +3,15 @@
 #include <math.h>
 #include <stdio.h>
 #include <string.h>
-typedef struct { uint8_t regs[128], frame[14]; unsigned calls, fail_at; cs_bus_result fail; } fake;
+typedef struct { uint8_t regs[128], frame[14]; unsigned calls, fail_at; cs_bus_result fail; unsigned bad_range; } fake;
 static cs_bus_result read_reg(void *ctx, uint8_t addr, uint8_t reg, uint8_t *out, size_t n)
 {
     fake *f = ctx;
     assert(addr == 0x68);
     if (++f->calls == f->fail_at) return f->fail;
     memcpy(out, reg == 0x3B ? f->frame : f->regs + reg, n);
+    if(reg==0x1B && f->bad_range==1)out[1]=0;
+    if(reg==0x1B && f->bad_range==2)out[0]=0x08;
     return CS_BUS_OK;
 }
 static cs_bus_result write_reg(void *ctx, uint8_t addr, uint8_t reg, const uint8_t *in, size_t n)
@@ -29,6 +31,8 @@ int main(void)
     fake f = {0}; f.regs[0x75] = 0x68;
     cs_mpu6050 d = {{&f, read_reg, write_reg}, 0x68};
     assert(cs_mpu_start(&d) == CS_BUS_OK && f.calls == 7);
+    f.calls=0;f.bad_range=1;assert(cs_mpu_start(&d)==CS_BUS_CONFIG);f.bad_range=0;
+    f.calls=0;f.bad_range=2;assert(cs_mpu_start(&d)==CS_BUS_CONFIG);f.bad_range=0;
     f.calls = 0; f.regs[0x75] = 0;
     assert(cs_mpu_start(&d) == CS_BUS_BAD_ID);
     f.regs[0x75] = 0x68;
@@ -52,5 +56,6 @@ int main(void)
     assert(cs_mpu_read(&d, &s, raw) == CS_BUS_TIMEOUT);
     assert(memcmp(&s, &old, sizeof s) == 0 && memcmp(raw, oldraw, 14) == 0);
     puts("PASS: MPU init ordering, range, signed units, NACK/timeout, stale output");
+    return 0;
 }
 

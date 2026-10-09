@@ -4,14 +4,14 @@
 
 | Пін МК | AF / периферія | Arduino | Пристрій | Рівень / підтяжка | Підстава вибору |
 |---|---|---|---|---|---|
-| PA0 | analog / ADC1 IN0 | A0 | LDR AO | 0..3.3 В, без pull | DS13867 табл. 12; окремий аналоговий канал |
-| PA1 | GPIO input | A1 | PIR OUT | 3.3 В, MCU pull-down | DS13867 табл. 12; не займає USART2 |
-| PB8 | AF6 / I2C1 SCL | D15 | MPU6050 SCL | OD, зовнішня 4.7 кОм до 3V3 | DS13867 табл. 15; шина ЛР1 |
-| PB9 | AF6 / I2C1 SDA | D14 | MPU6050 SDA | OD, зовнішня 4.7 кОм до 3V3 | DS13867 табл. 15; пара до PB8 |
+| PA0 | analog / ADC1 IN0 | CN8.1 / A0 | LDR AO | 0..3.3 В, без pull | DS13867 табл. 12; окремий аналоговий канал |
+| PA1 | GPIO input | CN8.2 / A1 | PIR OUT | 3.3 В, MCU pull-down | DS13867 табл. 12; не займає USART2 |
+| PB8 | AF6 / I2C1 SCL | CN5.10 / D15 | MPU6050 SCL | OD, зовнішня 4.7 кОм до 3V3 | DS13867 табл. 15; шина ЛР1 |
+| PB9 | AF6 / I2C1 SDA | CN5.9 / D14 | MPU6050 SDA | OD, зовнішня 4.7 кОм до 3V3 | DS13867 табл. 15; пара до PB8 |
 | PA2 | AF1 / USART2 TX | D1 / VCP | Monitor RX | 3.3 В, без pull | DS13867 табл. 13; журнал ЛР1 |
 | PA3 | AF1 / USART2 RX | D0 / VCP | Monitor TX | 3.3 В, без pull | DS13867 табл. 13; LF-команди |
 | PA5 | GPIO output | D13 / LD4 | LED плати | push-pull | UM2953 §6.10; тривога та heartbeat |
-| PA4 | GPIO output | A2 | ADC_MARK, аналізатор D4 | push-pull | Вільний вивід для вимірювання виклику ADC |
+| PA4 | GPIO output | CN8.3 / A2 | ADC_MARK, аналізатор D4 | push-pull | Вільний вивід для вимірювання виклику ADC |
 | PC13 | GPIO input / EXTI13 | B1 | Кнопка плати | конфігурація ЛР1 | Не керує режимами; натискання не змінює стан |
 | PA13/PA14 | SWD | debug | Налагодження | конфігурація ЛР1 | Не використовуються сенсорами |
 

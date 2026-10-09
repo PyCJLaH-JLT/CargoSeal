@@ -1,0 +1,20 @@
+name: CargoSeal build and tests
+on:
+  push:
+    branches: [main, feature/lab-2]
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: ARM build
+        run: make build
+      - name: Host tests and dependency checks
+        run: make test
+      - name: GCC coverage
+        run: make coverage
+

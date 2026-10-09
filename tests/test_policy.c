@@ -38,5 +38,6 @@ int main(void)
     assert(l.records[6].kind == CS_SENSOR_RECOVERED);
     for(unsigned i=0;i<l.count;++i) assert(l.records[i].seq == i+1);
     puts("PASS: motion confirmation, impact boundary/priority, fault/recovery, independent PIR/light");
+    return 0;
 }
 

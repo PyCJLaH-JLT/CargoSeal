@@ -24,5 +24,6 @@ int main(void)
     assert(!cs_pir_sample(&pir, false));
     assert(cs_pir_sample(&pir, true));
     puts("PASS: ADC endpoints, polarity, four samples, twenty sample baseline, PIR edges");
+    return 0;
 }
 

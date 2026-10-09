@@ -1,0 +1,26 @@
+make: Entering directory '/workspace/tests'
+mkdir -p build/Linux-aarch64
+cc -std=c11 -Wall -Wextra -Werror -g test_sensors.c ../firmware/Sensors/mpu6050.c -lm -o build/Linux-aarch64/sensors
+mkdir -p build/Linux-aarch64
+cc -std=c11 -Wall -Wextra -Werror -g test_light.c ../firmware/Sensors/light.c -lm -o build/Linux-aarch64/light
+mkdir -p build/Linux-aarch64
+cc -std=c11 -Wall -Wextra -Werror -g test_policy.c ../firmware/Policy/container.c -lm -o build/Linux-aarch64/policy
+mkdir -p build/Linux-aarch64
+cc -std=c11 -Wall -Wextra -Werror -g test_commands.c ../firmware/Policy/container.c ../firmware/Policy/commands.c -lm -o build/Linux-aarch64/commands
+mkdir -p build/Linux-aarch64
+cc -std=c11 -Wall -Wextra -Werror -g test_acceptance.c ../firmware/Policy/container.c -lm -o build/Linux-aarch64/acceptance
+mkdir -p build/Linux-aarch64
+cc -std=c11 -Wall -Wextra -Werror -g -Ifakes test_runtime.c ../firmware/Board/runtime.c ../firmware/Policy/container.c ../firmware/Policy/commands.c ../firmware/Sensors/mpu6050.c ../firmware/Sensors/light.c -lm -o build/Linux-aarch64/runtime
+./build/Linux-aarch64/sensors
+PASS: MPU init ordering, range, signed units, NACK/timeout, stale output
+./build/Linux-aarch64/light
+PASS: ADC endpoints, polarity, four samples, twenty sample baseline, PIR edges
+./build/Linux-aarch64/policy
+PASS: motion confirmation, impact boundary/priority, fault/recovery, independent PIR/light
+./build/Linux-aarch64/commands
+PASS: explicit modes, HIGH PIR transition, persistent alarm, ACK guard, LF parser and overflow
+./build/Linux-aarch64/acceptance
+PASS: T03-T12 numerical boundaries, 200/300/500ms timers, simultaneous events, mode transitions, wrap, invalid data
+./build/Linux-aarch64/runtime
+PASS: runtime 20/50ms schedule, LF, events, ACK, address fault/recovery and 20 STATUS/s at modeled 115200 UART
+make: Leaving directory '/workspace/tests'

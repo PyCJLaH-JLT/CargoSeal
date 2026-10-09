@@ -32,6 +32,10 @@ int main(void)
     for(unsigned i=0;i<6;++i) cs_line_byte(&reader,(unsigned char)"STATUS"[i],&cmd);
     cs_line_byte(&reader,'\r',&cmd);
     assert(cs_line_byte(&reader,'\n',&cmd) && cmd==CS_CMD_STATUS);
+    assert(cs_line_byte(&reader,'\n',&cmd) && cmd==CS_CMD_ERROR);
+    cs_line_byte(&reader,0,&cmd);
+    assert(cs_line_byte(&reader,'\n',&cmd) && cmd==CS_CMD_ERROR);
     puts("PASS: explicit modes, HIGH PIR transition, persistent alarm, ACK guard, LF parser and overflow");
+    return 0;
 }
 
