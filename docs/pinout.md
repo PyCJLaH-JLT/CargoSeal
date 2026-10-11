@@ -8,8 +8,8 @@
 | PA1 | GPIO input | CN8.2 / A1 | PIR OUT | 3.3 В, MCU pull-down | DS13867 табл. 12; не займає USART2 |
 | PB8 | AF6 / I2C1 SCL | CN5.10 / D15 | MPU6050 SCL | OD, зовнішня 4.7 кОм до 3V3 | DS13867 табл. 15; шина ЛР1 |
 | PB9 | AF6 / I2C1 SDA | CN5.9 / D14 | MPU6050 SDA | OD, зовнішня 4.7 кОм до 3V3 | DS13867 табл. 15; пара до PB8 |
-| PA2 | AF1 / USART2 TX | D1 / VCP | Monitor RX | 3.3 В, без pull | DS13867 табл. 13; журнал ЛР1 |
-| PA3 | AF1 / USART2 RX | D0 / VCP | Monitor TX | 3.3 В, без pull | DS13867 табл. 13; LF-команди |
+| PA2 | AF1 / USART2 TX | VCP USART2, окремий PA2 | Monitor RX | 3.3 В, без pull | DS13867 табл. 13; журнал ЛР1 |
+| PA3 | AF1 / USART2 RX | VCP USART2, окремий PA3 | Monitor TX | 3.3 В, без pull | DS13867 табл. 13; LF-команди |
 | PA5 | GPIO output | D13 / LD4 | LED плати | push-pull | UM2953 §6.10; тривога та heartbeat |
 | PA4 | GPIO output | CN8.3 / A2 | ADC_MARK, аналізатор D4 | push-pull | Вільний вивід для вимірювання виклику ADC |
 | PC13 | GPIO input / EXTI13 | B1 | Кнопка плати | конфігурація ЛР1 | Не керує режимами; натискання не змінює стан |
@@ -18,6 +18,10 @@
 Порядок монтажу: спільна земля; MPU і LDR VCC до 3V3.1; PIR VCC до 5V.1, OUT моделі 3.3 В; MPU AD0 до GND.1. AO до PA0, DO вільний. Додати по одному 4.7 кОм від SDA/SCL до 3V3.1. Monitor TX до PA3, RX до PA2. Аналізатор D0=SCL, D1=SDA, D2=UART_TX, D3=PIR, D4=ADC_MARK, D5=UART_RX, D6=LED; GND спільна.
 
 На фізичному PIR перевірити OUT до підключення. Не подавати 5 В на ADC. Врахувати резистори breakout, перш ніж додавати зовнішні pull-up. Числа струмів нижче є оцінками, симулятор їх не вимірює.
+
+UM2953, таблиця 11 і рисунок 7, с. 19–20, підтверджують CN8 та CN5. D0/D1 за замовчуванням є PB7/PB6 USART1, а не PA3/PA2 USART2. Для CargoSeal використовуються саме PA2/PA3 та VCP USART2. У таблиці 12 UM підписи PB8/PB9 SCL/SDA переставлено; функції звірено з DS13867 та таблицею 11 UM.
+
+Карту регістрів InvenSense RM-MPU-6000A-00 Rev 4.0 прочитано у [копії оригінального документа на SparkFun](https://cdn.sparkfun.com/datasheets/Sensors/Accelerometers/RM-MPU-6000A.pdf). Діапазони описано на с. 14–15, дані та масштаби на с. 30–32, WHO_AM_I на с. 46. Сайт TDK для посилання Register Map повернув HTML замість PDF, тому версію 4.2 не заявляємо як прочитану.
 
 | Вузол | Робочий струм / бюджет | Обмеження |
 |---|---|---|

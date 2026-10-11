@@ -1,0 +1,11 @@
+14.613775 ms STM32C031C6 ready
+16.483150 ms BOOT CargoSeal mode=INSTALLED imu_period_ms=20 adc_period_ms=50
+22.879150 ms SELFTEST device=MPU6050 valid=1 result=0 address=0x68 accel_range_g=8 gyro_range_dps=250
+32.190925 ms SELFTEST device=PIR gpio_readable=1 high=0
+36.518300 ms SELFTEST device=LDR adc_valid=1 raw=4063 baseline_ready=0
+550.238150 ms READ_IMU time_ms=539 valid=1 id=0x68 raw=00 00 00 00 10 00 EF 5C 00 00 00 00 00 00 ax_mg=0 ay_mg=0 az_mg=1000 gx_mdps=0 gy_mdps=0 gz_mdps=0
+964.435250 ms CALIBRATION time_ms=961 samples=20 E0=32 unit=ADC_code ready=1
+971.244500 ms SELFTEST device=MPU6050 valid=1 result=0 address=0x68 accel_range_g=8 gyro_range_dps=250
+980.098200 ms SELFTEST device=PIR gpio_readable=1 high=0
+984.686275 ms SELFTEST device=LDR adc_valid=1 raw=4063 baseline_ready=1
+1016.528900 ms tick 1

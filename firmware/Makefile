@@ -37,6 +37,7 @@ BUILD_DIR = build
 # C sources
 C_SOURCES =  \
 Board/runtime.c \
+Board/imu_bus.c \
 Policy/container.c \
 Policy/commands.c \
 Sensors/mpu6050.c \

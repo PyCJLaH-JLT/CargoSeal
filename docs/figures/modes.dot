@@ -1,0 +1,12 @@
+digraph CargoSealModes {
+ graph [rankdir=TB,bgcolor="white",pad=0.25,nodesep=0.5,ranksep=0.65];
+ node [shape=box,style="rounded",fontname="Times New Roman",fontsize=14,margin="0.2,0.15",color="#29434b"];
+ edge [fontname="DejaVu Sans Mono",fontsize=10,color="#29434b",arrowsize=0.8];
+ boot [label="Запуск",shape=oval];
+ installed [label="INSTALLED\nРух: DISTURBANCE + alarm\nУдар: IMPACT + alarm\nPIR: NEARBY\nСвітло: LIGHT_CHANGE + alarm"];
+ transport [label="TRANSPORT\nРух: MOVE\nУдар: IMPACT + alarm\nPIR: без події\nСвітло: LIGHT_CHANGE + alarm"];
+ boot -> installed;
+ installed -> transport [label="MODE TRANSPORT + LF"];
+ transport -> installed [label="MODE INSTALLED + LF"];
+}
+

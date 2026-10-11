@@ -9,7 +9,7 @@ test: $(BUILD)/sensors $(BUILD)/light $(BUILD)/policy $(BUILD)/commands $(BUILD)
 	./$(BUILD)/commands
 	./$(BUILD)/acceptance
 	./$(BUILD)/runtime
-$(BUILD)/runtime: test_runtime.c ../firmware/Board/runtime.c ../firmware/Policy/container.c ../firmware/Policy/commands.c ../firmware/Sensors/mpu6050.c ../firmware/Sensors/light.c
+$(BUILD)/runtime: test_runtime.c fakes/imu_bus.c ../firmware/Board/runtime.c ../firmware/Policy/container.c ../firmware/Policy/commands.c ../firmware/Sensors/mpu6050.c ../firmware/Sensors/light.c
 	mkdir -p $(BUILD)
 	$(CC) $(CFLAGS) -Ifakes $^ -lm -o $@
 $(BUILD)/acceptance: test_acceptance.c ../firmware/Policy/container.c

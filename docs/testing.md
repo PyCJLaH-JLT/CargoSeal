@@ -22,8 +22,10 @@ GCC coverage для однієї instrumented copy переносимих мод
 | Policy/container.c | 83/83, 100% | 65/68, 95.59% |
 | Policy/commands.c | 14/14, 100% | 17/18, 94.44% |
 
-Ціль ≥90% рядків і ≥80% напрямків гілок обрана для переносимого коду з перевіркою негативних сценаріїв. Відсоток не замінює вимоги: окремо перевіряються числові границі й переходи. Core, Board та Drivers не входять до цього coverage, апаратна інтеграція потребує Wokwi та записів сигналів.
+Ціль ≥90% рядків і ≥80% напрямків гілок обрана для переносимого коду з перевіркою негативних сценаріїв. Відсоток не замінює вимоги: окремо перевіряються числові границі й переходи. Core, Board та Drivers не входять до цього coverage, апаратну інтеграцію додатково перевірено Wokwi та записами сигналів, фізичну плату не перевіряли.
 
 Команди: make test; make coverage. Для sanitizer: make -C tests clean; make -C tests test CFLAGS='-std=c11 -Wall -Wextra -Werror -g -fsanitize=address,undefined -fno-omit-frame-pointer'. Кожна платформа має власний tests/build/OS-arch. CI запускає build/test/coverage на push і pull_request до main.
 
-FR-01/02 перевіряються startup і heartbeat у runtime та потребують запису UART/LED. FR-03/10/13/14 покрито commands/runtime; FR-04/05/06 acceptance; FR-07 light/commands/runtime; FR-08 light/acceptance; FR-09 policy та подальшим декодуванням журналу; FR-11 sensors/runtime; FR-12 acceptance/runtime. Термін 100 мс на реальному UART Wokwi ще не виміряно.
+FR-01/02 перевіряються startup і heartbeat у runtime та потребують запису UART/LED. FR-03/10/13/14 покрито commands/runtime; FR-04/05/06 acceptance; FR-07 light/commands/runtime; FR-08 light/acceptance; FR-09 policy та подальшим декодуванням журналу; FR-11 sensors/runtime; FR-12 acceptance/runtime. У final-acceptance.vcd збережено 36 подій; повний MODE/STATUS/ERR після LF займає 1.50..36.65 мс. Час визначено за UART RX/TX з урахуванням stop bit LF. Деталі у docs/captures/analysis.md.
+
+Реальні 14 байт MPU6050 з першого burst фінального VCD додано до tests/fixtures/mpu6050_observed.h та перевірено driver test. Два Python regression tests захищають порядок переходів з однаковою часовою міткою і звіряють WHO_AM_I з власного запису. sigrok-cli незалежно підтверджує 0x68 і raw frame.

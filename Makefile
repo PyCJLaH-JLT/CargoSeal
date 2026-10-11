@@ -15,6 +15,7 @@ clean:
 check:
 	python3 tools/check_layers.py
 	python3 tools/check_wiring.py
+	python3 tests/test_capture.py
 test: check
 	$(MAKE) -C tests test
 coverage: image check

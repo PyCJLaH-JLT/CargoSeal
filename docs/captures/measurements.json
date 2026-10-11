@@ -1,0 +1,22 @@
+{
+  "events": 36,
+  "complete_response_after_lf_ms": {
+    "min": 1.4965416666641236,
+    "max": 36.642725,
+    "count": 31
+  },
+  "imu_period_median_ms": 19.99785,
+  "adc_period_ms": {
+    "min": 46.918775,
+    "median": 49.99745,
+    "max": 53.08915
+  },
+  "adc_mark_width_median_us": 71.675,
+  "pir_high_ms": [
+    5000.000025,
+    5000.000025
+  ],
+  "first_burst_raw_hex": "00 00 00 00 10 00 EF 5C 00 00 00 00 00 00",
+  "read_phase_duration_us": 1365.0,
+  "note": "Response completion includes CRLF and the stop bit of LF. GPIO marker spans the entire HAL ADC call. UI pausing stops simulated time."
+}

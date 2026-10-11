@@ -3,6 +3,7 @@
 #include <math.h>
 #include <stdio.h>
 #include <string.h>
+#include "fixtures/mpu6050_observed.h"
 typedef struct { uint8_t regs[128], frame[14]; unsigned calls, fail_at; cs_bus_result fail; unsigned bad_range; } fake;
 static cs_bus_result read_reg(void *ctx, uint8_t addr, uint8_t reg, uint8_t *out, size_t n)
 {
@@ -44,6 +45,14 @@ int main(void)
         }
     }
     f.fail_at = 0;
+    memcpy(f.frame, observed_mpu6050_frame, 14);
+    cs_imu_sample observed = {0};
+    uint8_t observed_raw[14];
+    assert(cs_mpu_read(&d, &observed, observed_raw) == CS_BUS_OK);
+    assert(memcmp(observed_raw, observed_mpu6050_frame, 14) == 0);
+    assert(observed.acceleration_g[2] == 1.0f);
+    assert(observed.acceleration_g[0] == 0.0f && observed.rotation_dps[0] == 0.0f);
+    assert(fabsf(observed.temperature_c - 24.0f) < 0.01f);
     const uint8_t frame[14] = {0x10,0,0xF0,0,0x28,0,0xEF,0x5C,0,0x83,0xFF,0x7D,0,0};
     memcpy(f.frame, frame, 14);
     cs_imu_sample s = {0}; uint8_t raw[14];

@@ -1,4 +1,5 @@
 #include "runtime.h"
+#include "imu_bus.h"
 #include "main.h"
 #include "../Policy/container.h"
 #include "../Policy/commands.h"
@@ -23,22 +24,6 @@ static volatile bool tx_busy;
 static uint32_t tx_dropped, next_imu, next_adc, last_retry, last_tick;
 static volatile uint32_t rx_dropped;
 static bool baseline_logged;
-static cs_bus_result bus_result(HAL_StatusTypeDef result)
-{
-    if (result == HAL_OK) return CS_BUS_OK;
-    if (result == HAL_TIMEOUT) return CS_BUS_TIMEOUT;
-    return (HAL_I2C_GetError(&hi2c1) & HAL_I2C_ERROR_AF) ? CS_BUS_NACK : CS_BUS_TIMEOUT;
-}
-static cs_bus_result read_reg(void *ctx, uint8_t addr, uint8_t reg, uint8_t *data, size_t n)
-{
-    (void)ctx;
-    return bus_result(HAL_I2C_Mem_Read(&hi2c1,(uint16_t)(addr<<1),reg,I2C_MEMADD_SIZE_8BIT,data,(uint16_t)n,10));
-}
-static cs_bus_result write_reg(void *ctx, uint8_t addr, uint8_t reg, const uint8_t *data, size_t n)
-{
-    (void)ctx;
-    return bus_result(HAL_I2C_Mem_Write(&hi2c1,(uint16_t)(addr<<1),reg,I2C_MEMADD_SIZE_8BIT,(uint8_t *)data,(uint16_t)n,10));
-}
 static void text(const char *format, ...)
 {
     char line[256];
@@ -149,7 +134,7 @@ static void selftest(void)
 static void read_imu(uint32_t now)
 {
     uint8_t id=0;cs_imu_sample sample;uint8_t bytes[14];
-    cs_bus_result r=read_reg(NULL,mpu.address,0x75,&id,1);
+    cs_bus_result r=cs_board_imu_read(NULL,mpu.address,0x75,&id,1);
     if(r==CS_BUS_OK) r=cs_mpu_read(&mpu,&sample,bytes);
     if(r!=CS_BUS_OK){text("READ_IMU time_ms=%lu valid=0 result=%u\r\n",(unsigned long)now,r);return;}
     char hex[43];
@@ -185,7 +170,7 @@ void cs_runtime_start(void)
     HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,GPIO_PIN_RESET);
     HAL_NVIC_SetPriority(USART2_IRQn,1,0);HAL_NVIC_EnableIRQ(USART2_IRQn);
     (void)HAL_UART_Receive_IT(&huart2,&rx_byte,1);
-    mpu=(cs_mpu6050){{NULL,read_reg,write_reg},0x68};
+    mpu=(cs_mpu6050){{NULL,cs_board_imu_read,cs_board_imu_write},0x68};
     text("STM32C031C6 ready\r\nBOOT CargoSeal mode=INSTALLED imu_period_ms=20 adc_period_ms=50\r\n");
     if(!adc_init()) text("SELFTEST device=ADC init=ERROR\r\n");
     uint32_t now=HAL_GetTick();
