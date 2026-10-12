@@ -85,3 +85,5 @@ sigrok-cli -i docs/captures/uart-read-imu.sr -P uart:tx=UART_TX:baudrate=115200:
 ```
 
 PulseView: Open .sr, Add protocol decoder I²C з SCL/SDA або UART з TX=UART_TX, 115200, 8N1. Для GPIO відкрийте gpio-pir-adc.sr без протокольного decoder. Cursors вимірюють інтервали; незмінений *.vcd.gz дає повний run для незалежної перевірки.
+
+Додаткові PulseView Timing кадри: i2c-clock.sr має Data=SCL, по5.000 µs наHIGH/LOW. adc-marker-width.sr має Data=ADC_MARK,71.650 µs при20 MHz. У periodview49.926 msLOW+0.071675 msHIGH=49.997675 mscycle; any-edge Average не є частотоюопитування. Канали перейменовано лише для автоматичного Data assignment, рівні й timestamps не змінено. uart-read-prefix.sr містить читабельний початок повногоREAD_IMU.

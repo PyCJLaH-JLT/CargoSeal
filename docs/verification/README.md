@@ -41,6 +41,6 @@ ELF має ELF32, little-endian, ARM, EABI5, soft-float ABI, entry point `0x0800
 
 ## Що перевірка не підтверджує
 
-Код шаблону переглянуто, firmware зібрано й артефакти порівняно. Wokwi не запускався. Ready/tick, LED, значення частоти I²C та будь-які тести сенсорів під час виконання ще не підтверджено. Майбутні вимоги ЛР2 у PRD не реалізовані. Скріншоти й PDF-звіт тут відсутні.
+Наведені вище журнали є історичними перевірками збірки ЛР1. Згодом запуск ready/tick/LED підтверджено у прийнятому звіті ЛР1. Поточні перевірки ЛР2 знаходяться у lab2/: шість C suites, sanitizer і portable coverage. Власні Wokwi captures, manifests і декодування знаходяться у ../captures. ci-75bff8c.json фіксує успішний попередній запуск для старого SHA до призначення дат Git і не є доказом нового фінального HEAD. Фактичні timestamps усіх журналів залишено без змін.
 
 Для повтору достатньо виконати `make clean`, `make build` і SHA256 усіх трьох файлів. На Ubuntu команда `sha256sum firmware/build/firmware.elf firmware/build/firmware.hex firmware/build/firmware.bin`; на macOS відповідник `shasum -a 256` з тим самим списком.
