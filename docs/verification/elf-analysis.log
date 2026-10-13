@@ -1,0 +1,152 @@
+Started UTC: 2026-10-04T09:37:01.626144+00:00
+$ arm-none-eabi-readelf -h /audit/mac.elf
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           ARM
+  Version:                           0x1
+  Entry point address:               0x8003271
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          484472 (bytes into file)
+  Flags:                             0x5000200, Version5 EABI, soft-float ABI
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         3
+  Size of section headers:           40 (bytes)
+  Number of section headers:         22
+  Section header string table index: 21
+Exit code: 0
+$ arm-none-eabi-readelf -S /audit/mac.elf
+There are 22 section headers, starting at offset 0x76478:
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .isr_vector       PROGBITS        08000000 010000 0000c0 00   A  0   0  1
+  [ 2] .text             PROGBITS        080000c0 0100c0 00321c 00  AX  0   0  4
+  [ 3] .rodata           PROGBITS        080032dc 0132dc 0001bc 00   A  0   0  4
+  [ 4] .init_array       INIT_ARRAY      08003498 013498 000004 04  WA  0   0  4
+  [ 5] .fini_array       FINI_ARRAY      0800349c 01349c 000004 04  WA  0   0  4
+  [ 6] .data             PROGBITS        20000000 020000 000070 00  WA  0   0  4
+  [ 7] .bss              NOBITS          20000070 020070 00010c 00  WA  0   0  4
+  [ 8] ._user_heap_stack NOBITS          2000017c 02017c 000604 00  WA  0   0  1
+  [ 9] .ARM.attributes   ARM_ATTRIBUTES  00000000 020070 000028 00      0   0  1
+  [10] .comment          PROGBITS        00000000 020098 000033 01  MS  0   0  1
+  [11] .debug_info       PROGBITS        00000000 0200cb 0228c5 00      0   0  1
+  [12] .debug_abbrev     PROGBITS        00000000 042990 005a04 00      0   0  1
+  [13] .debug_loc        PROGBITS        00000000 048394 011534 00      0   0  1
+  [14] .debug_aranges    PROGBITS        00000000 0598c8 000e28 00      0   0  8
+  [15] .debug_ranges     PROGBITS        00000000 05a6f0 000d48 00      0   0  8
+  [16] .debug_line       PROGBITS        00000000 05b438 011d44 00      0   0  1
+  [17] .debug_str        PROGBITS        00000000 06d17c 0043b1 01  MS  0   0  1
+  [18] .debug_frame      PROGBITS        00000000 071530 002264 00      0   0  4
+  [19] .symtab           SYMTAB          00000000 073794 001e70 10     20 312  4
+  [20] .strtab           STRTAB          00000000 075604 000d89 00      0   0  1
+  [21] .shstrtab         STRTAB          00000000 07638d 0000e9 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  D (mbind), y (purecode), p (processor specific)
+Exit code: 0
+$ arm-none-eabi-objcopy --strip-debug /audit/mac.elf /audit/mac-stripped.elf
+Exit code: 0
+$ arm-none-eabi-readelf -h /audit/ubuntu.elf
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           ARM
+  Version:                           0x1
+  Entry point address:               0x8003271
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          484472 (bytes into file)
+  Flags:                             0x5000200, Version5 EABI, soft-float ABI
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         3
+  Size of section headers:           40 (bytes)
+  Number of section headers:         22
+  Section header string table index: 21
+Exit code: 0
+$ arm-none-eabi-readelf -S /audit/ubuntu.elf
+There are 22 section headers, starting at offset 0x76478:
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .isr_vector       PROGBITS        08000000 010000 0000c0 00   A  0   0  1
+  [ 2] .text             PROGBITS        080000c0 0100c0 00321c 00  AX  0   0  4
+  [ 3] .rodata           PROGBITS        080032dc 0132dc 0001bc 00   A  0   0  4
+  [ 4] .init_array       INIT_ARRAY      08003498 013498 000004 04  WA  0   0  4
+  [ 5] .fini_array       FINI_ARRAY      0800349c 01349c 000004 04  WA  0   0  4
+  [ 6] .data             PROGBITS        20000000 020000 000070 00  WA  0   0  4
+  [ 7] .bss              NOBITS          20000070 020070 00010c 00  WA  0   0  4
+  [ 8] ._user_heap_stack NOBITS          2000017c 02017c 000604 00  WA  0   0  1
+  [ 9] .ARM.attributes   ARM_ATTRIBUTES  00000000 020070 000028 00      0   0  1
+  [10] .comment          PROGBITS        00000000 020098 000033 01  MS  0   0  1
+  [11] .debug_info       PROGBITS        00000000 0200cb 0228c5 00      0   0  1
+  [12] .debug_abbrev     PROGBITS        00000000 042990 005a04 00      0   0  1
+  [13] .debug_loc        PROGBITS        00000000 048394 011534 00      0   0  1
+  [14] .debug_aranges    PROGBITS        00000000 0598c8 000e28 00      0   0  8
+  [15] .debug_ranges     PROGBITS        00000000 05a6f0 000d48 00      0   0  8
+  [16] .debug_line       PROGBITS        00000000 05b438 011d44 00      0   0  1
+  [17] .debug_str        PROGBITS        00000000 06d17c 0043b1 01  MS  0   0  1
+  [18] .debug_frame      PROGBITS        00000000 071530 002264 00      0   0  4
+  [19] .symtab           SYMTAB          00000000 073794 001e70 10     20 312  4
+  [20] .strtab           STRTAB          00000000 075604 000d89 00      0   0  1
+  [21] .shstrtab         STRTAB          00000000 07638d 0000e9 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  D (mbind), y (purecode), p (processor specific)
+Exit code: 0
+$ arm-none-eabi-objcopy --strip-debug /audit/ubuntu.elf /audit/ubuntu-stripped.elf
+Exit code: 0
+a3e7c7f6f75dad9b378868472978f3557b3f3ae74a45a7e1d531e48d711859de  mac-stripped.elf
+a3e7c7f6f75dad9b378868472978f3557b3f3ae74a45a7e1d531e48d711859de  ubuntu-stripped.elf
+Stripped ELF identical: True
+Finished UTC: 2026-10-04T09:37:02.784377+00:00
+Section content comparison, UTC: 2026-10-04T09:37:21.343426+00:00
+.isr_vector: identical=True, Mac size=192, Ubuntu size=192, alloc=True
+.text: identical=True, Mac size=12828, Ubuntu size=12828, alloc=True
+.rodata: identical=True, Mac size=444, Ubuntu size=444, alloc=True
+.init_array: identical=True, Mac size=4, Ubuntu size=4, alloc=True
+.fini_array: identical=True, Mac size=4, Ubuntu size=4, alloc=True
+.data: identical=True, Mac size=112, Ubuntu size=112, alloc=True
+.bss: identical=True, Mac size=268, Ubuntu size=268, alloc=True
+._user_heap_stack: identical=True, Mac size=1540, Ubuntu size=1540, alloc=True
+.ARM.attributes: identical=True, Mac size=40, Ubuntu size=40, alloc=False
+.comment: identical=True, Mac size=51, Ubuntu size=51, alloc=False
+.debug_info: identical=True, Mac size=141509, Ubuntu size=141509, alloc=False
+.debug_abbrev: identical=True, Mac size=23044, Ubuntu size=23044, alloc=False
+.debug_loc: identical=True, Mac size=70964, Ubuntu size=70964, alloc=False
+.debug_aranges: identical=True, Mac size=3624, Ubuntu size=3624, alloc=False
+.debug_ranges: identical=True, Mac size=3400, Ubuntu size=3400, alloc=False
+.debug_line: identical=True, Mac size=73028, Ubuntu size=73028, alloc=False
+.debug_str: identical=False, Mac size=17329, Ubuntu size=17329, alloc=False
+.debug_frame: identical=True, Mac size=8804, Ubuntu size=8804, alloc=False
+.symtab: identical=True, Mac size=7792, Ubuntu size=7792, alloc=False
+.strtab: identical=True, Mac size=3465, Ubuntu size=3465, alloc=False
+.shstrtab: identical=True, Mac size=233, Ubuntu size=233, alloc=False
+All allocated ELF sections have identical content, sizes and addresses.
+--- Mac .debug_str
++++ Ubuntu .debug_str
+@@ -1074,6 +1074,6 @@
+ nextone
+ size_or_offset
+ ../../../../../../libgcc/config/arm/lib1funcs.S
+-/build/gcc-arm-none-eabi-A9GHXF/gcc-arm-none-eabi-10.3-2021.07/build/arm-none-eabi/thumb/v6-m/nofp/libgcc
++/build/gcc-arm-none-eabi-hYfgK4/gcc-arm-none-eabi-10.3-2021.07/build/arm-none-eabi/thumb/v6-m/nofp/libgcc
+ GNU AS 2.37
+ 
