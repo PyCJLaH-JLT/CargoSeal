@@ -1,0 +1,18 @@
+digraph CargoSeal {
+ graph [rankdir=TB,bgcolor="white",pad=0.25,nodesep=0.3,ranksep=0.5];
+ node [shape=box,style="rounded",fontname="Times New Roman",fontsize=16,color="#29434b",margin="0.15,0.1"];
+ edge [color="#29434b",arrowsize=0.8];
+ core [label="Core\nmain · clock init · IRQ"];
+ board [label="Board/runtime.c\nUART · опитування\n20/50 мс · відновлення"];
+ sensors [label="Sensors\nMPU6050\nфільтр світла"];
+ policy [label="Policy\nрежими · епізоди\nalarm"];
+ hal [label="Drivers\nST HAL · CMSIS"];
+ bus [label="register_bus\ncontext · read · write"];
+ host [label="Host tests\nчас · fake bus · fake HAL",style="rounded,dashed"];
+ core -> board;
+ board -> sensors; board -> policy; board -> hal; board -> bus;
+ sensors -> bus;
+ host -> sensors [style=dashed]; host -> policy [style=dashed]; host -> board [style=dashed];
+ {rank=same;sensors;policy;hal}
+}
+

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "author": "template",
+  "author": "CargoSeal",
   "editor": "wokwi",
   "parts": [
     {
@@ -9,11 +9,40 @@
       "top": 0,
       "left": 0,
       "attrs": {}
-    }
+    },
+    {"type":"wokwi-mpu6050","id":"imu","top":-30,"left":380,"attrs":{"accelZ":"1"}},
+    {"type":"wokwi-pir-motion-sensor","id":"pir","top":170,"left":380,"attrs":{"delayTime":"5"}},
+    {"type":"wokwi-photoresistor-sensor","id":"light","top":340,"left":380,"attrs":{"lux":"0.1"}},
+    {"type":"wokwi-resistor","id":"sclPull","top":-70,"left":200,"attrs":{"value":"4700"}},
+    {"type":"wokwi-resistor","id":"sdaPull","top":-110,"left":260,"attrs":{"value":"4700"}},
+    {"type":"wokwi-logic-analyzer","id":"logic","top":480,"left":380,"attrs":{"bufferSize":"4000000","channelNames":"SCL,SDA,UART_TX,PIR,ADC_MARK,UART_RX,LED,UNUSED","triggerMode":"off"}}
   ],
   "connections": [
     ["$serialMonitor:TX", "nucleo:PA3", "", []],
-    ["$serialMonitor:RX", "nucleo:PA2", "", []]
+    ["$serialMonitor:RX", "nucleo:PA2", "", []],
+    ["nucleo:3V3.1","imu:VCC","red",[]],
+    ["nucleo:GND.1","imu:GND","black",[]],
+    ["imu:AD0","nucleo:GND.1","black",[]],
+    ["nucleo:PB8","imu:SCL","green",[]],
+    ["nucleo:PB9","imu:SDA","blue",[]],
+    ["sclPull:1","nucleo:3V3.1","red",[]],
+    ["sclPull:2","imu:SCL","green",[]],
+    ["sdaPull:1","nucleo:3V3.1","red",[]],
+    ["sdaPull:2","imu:SDA","blue",[]],
+    ["nucleo:5V.1","pir:VCC","red",[]],
+    ["nucleo:GND.1","pir:GND","black",[]],
+    ["pir:OUT","nucleo:PA1","orange",[]],
+    ["nucleo:3V3.1","light:VCC","red",[]],
+    ["nucleo:GND.1","light:GND","black",[]],
+    ["light:AO","nucleo:PA0","purple",[]],
+    ["logic:GND","nucleo:GND.1","black",[]],
+    ["logic:D0","nucleo:PB8","green",[]],
+    ["logic:D1","nucleo:PB9","blue",[]],
+    ["logic:D2","nucleo:PA2","gray",[]],
+    ["logic:D3","nucleo:PA1","orange",[]],
+    ["logic:D4","nucleo:PA4","purple",[]],
+    ["logic:D5","nucleo:PA3","gray",[]],
+    ["logic:D6","nucleo:PA5","yellow",[]]
   ],
   "dependencies": {}
 }

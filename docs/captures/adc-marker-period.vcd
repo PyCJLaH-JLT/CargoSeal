@@ -1,0 +1,25 @@
+$version CargoSeal observed VCD clip $end
+$timescale 1 ns $end
+$scope module logic $end
+$var wire 1 ! ADC_MARK $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+#15997850
+1!
+#16069525
+0!
+#63242600
+1!
+#63314275
+0!
+#113240050
+1!
+#113311725
+0!
+#163247275
+1!
+#163318950
+0!
+#200000000

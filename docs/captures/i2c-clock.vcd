@@ -1,0 +1,27 @@
+$version CargoSeal observed VCD clip $end
+$timescale 1 ns $end
+$scope module logic $end
+$var wire 1 ! SCL $end
+$upscope $end
+$enddefinitions $end
+#0
+1!
+#4825
+0!
+#9825
+1!
+#14825
+0!
+#19825
+1!
+#24825
+0!
+#29825
+1!
+#34825
+0!
+#39825
+1!
+#44825
+0!
+#50000

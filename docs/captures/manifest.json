@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-13",
+  "method": "Wokwi Form B, direct upload of own repo HEX into temporary official HAL loader, without Save/Fork",
+  "trigger": "off",
+  "original_vcd_timescale_ns": 1,
+  "capacity_transitions": 4000000,
+  "channels": [
+    "SCL PB8",
+    "SDA PB9",
+    "UART_TX PA2",
+    "PIR PA1",
+    "ADC_MARK PA4",
+    "UART_RX PA3",
+    "LED PA5"
+  ],
+  "firmware": {
+    "firmware.elf": "cd80ae2f216a25534b2783f2d417ef0ae55fb35128cc317afdb6fce588e1ea20",
+    "firmware.hex": "e432325d2bbb176f6dd7151ee1112176423dfb6d02f6e79984409873cfd76c35",
+    "firmware.bin": "bf8f16a159f716ae6b0479a2627a47c0ef527a7b1fe5e4c4f2127633f53669e6"
+  },
+  "original_captures": {
+    "final-initialization.vcd": "1fcc41b0d376f9595fe152b3d3ae01b6c20adffa406cea7eb7f2e1bb7f254779",
+    "final-acceptance.vcd": "f1780a0822801c5d4bbe013777834ed1108db92e67d49f9977726812193f1d06"
+  },
+  "resampled_sr": {
+    "i2c/uart": "20 MHz, 50 ns",
+    "gpio-pir-adc": "1 MHz, 1 us"
+  },
+  "notes": "VCD records simulated transition times. Its 1 ns timescale is not a physical 1 GHz acquisition. Clips retain the final signal level at coincident timestamps; every origin JSON identifies its source hash and offset."
+}

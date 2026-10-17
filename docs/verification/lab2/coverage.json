@@ -1,0 +1,38 @@
+[
+  {
+    "module": "Sensors/mpu6050",
+    "lines": 28,
+    "total_lines": 28,
+    "line_pct": 100.0,
+    "taken_branches": 22,
+    "total_branches": 22,
+    "branch_pct": 100.0
+  },
+  {
+    "module": "Sensors/light",
+    "lines": 17,
+    "total_lines": 17,
+    "line_pct": 100.0,
+    "taken_branches": 12,
+    "total_branches": 12,
+    "branch_pct": 100.0
+  },
+  {
+    "module": "Policy/container",
+    "lines": 83,
+    "total_lines": 83,
+    "line_pct": 100.0,
+    "taken_branches": 65,
+    "total_branches": 68,
+    "branch_pct": 95.58823529411765
+  },
+  {
+    "module": "Policy/commands",
+    "lines": 14,
+    "total_lines": 14,
+    "line_pct": 100.0,
+    "taken_branches": 17,
+    "total_branches": 18,
+    "branch_pct": 94.44444444444444
+  }
+]

@@ -1,0 +1,154 @@
+14.613775 ms STM32C031C6 ready
+16.483150 ms BOOT CargoSeal mode=INSTALLED imu_period_ms=20 adc_period_ms=50
+22.879150 ms SELFTEST device=MPU6050 valid=1 result=0 address=0x68 accel_range_g=8 gyro_range_dps=250
+32.190925 ms SELFTEST device=PIR gpio_readable=1 high=0
+36.518300 ms SELFTEST device=LDR adc_valid=1 raw=4063 baseline_ready=0
+845.195500 ms EVENT seq=1 time_ms=840 mode=TRANSPORT event=MODE_CHANGE source=UART previous=INSTALLED value=TRANSPORT unit=mode valid=1 alarm=0
+858.215775 ms OK MODE TRANSPORT
+964.435500 ms CALIBRATION time_ms=961 samples=20 E0=32 unit=ADC_code ready=1
+1016.530400 ms tick 1
+1378.974125 ms EVENT seq=2 time_ms=1373 mode=TRANSPORT event=MOVE source=IMU value=300 unit=mg secondary=0 secondary_unit=mdps valid=1 alarm=0
+2013.761075 ms tick 2
+2119.991925 ms STATUS mode=TRANSPORT alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=2114 tx_dropped=0 rx_dropped=0
+3016.495750 ms tick 3
+4013.599725 ms tick 4
+4144.512750 ms EVENT seq=3 time_ms=4139 mode=INSTALLED event=MODE_CHANGE source=UART previous=TRANSPORT value=INSTALLED unit=mode valid=1 alarm=0
+4157.631525 ms OK MODE INSTALLED
+4658.961275 ms EVENT seq=4 time_ms=4653 mode=INSTALLED event=DISTURBANCE source=IMU value=300 unit=mg secondary=0 secondary_unit=mdps valid=1 alarm=1
+5016.442075 ms tick 5
+5257.926325 ms ERR ACTIVE
+6016.426000 ms tick 6
+6872.952200 ms OK ACK
+6921.416650 ms EVENT seq=5 time_ms=6911 mode=INSTALLED event=NEARBY source=PIR value=1 unit=bool secondary=0 secondary_unit=none valid=1 alarm=0
+6936.774775 ms EVENT seq=6 time_ms=6915 mode=INSTALLED event=IMPACT source=IMU value=1828 unit=mg secondary=0 secondary_unit=mdps valid=1 alarm=1
+7016.452675 ms tick 7
+7219.074700 ms EVENT seq=7 time_ms=7213 mode=INSTALLED event=LIGHT_CHANGE source=LDR value=4031 unit=ADC_code secondary=32 secondary_unit=ADC_code valid=1 alarm=1
+8016.373575 ms tick 8
+9016.357500 ms tick 9
+10016.348425 ms tick 10
+11016.327325 ms tick 11
+12013.557975 ms tick 12
+13016.290650 ms tick 13
+14016.270075 ms tick 14
+14157.189150 ms OK ACK
+15016.251750 ms tick 15
+15083.255100 ms OK IMU ADDRESS 0x69
+15096.139575 ms EVENT seq=8 time_ms=15091 mode=INSTALLED event=SENSOR_FAULT source=I2C value=1 unit=result_code secondary=0 secondary_unit=none valid=0 alarm=0
+15395.882350 ms EVENT seq=9 time_ms=15391 mode=INSTALLED event=NEARBY source=PIR value=1 unit=bool secondary=0 secondary_unit=none valid=1 alarm=0
+15935.322350 ms STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=1 uptime_ms=15930 tx_dropped=0 rx_dropped=0
+16013.531150 ms tick 16
+17013.349400 ms tick 17
+18013.490975 ms tick 18
+19013.476650 ms tick 19
+20013.449075 ms tick 20
+21013.392725 ms tick 21
+22013.254975 ms tick 22
+23013.396575 ms tick 23
+24013.366975 ms tick 24
+25013.351650 ms tick 25
+26013.329575 ms tick 26
+27013.269725 ms tick 27
+28013.276400 ms tick 28
+29013.270575 ms tick 29
+30013.088550 ms tick 30
+31013.214150 ms tick 31
+32013.190075 ms tick 32
+32882.317825 ms ERR ACTIVE
+33013.174225 ms tick 33
+33891.923500 ms OK IMU ADDRESS 0x68
+33903.016275 ms EVENT seq=10 time_ms=33898 mode=INSTALLED event=SENSOR_RECOVERED source=I2C value=0 unit=result_code secondary=0 secondary_unit=none valid=1 alarm=0
+34015.883675 ms tick 34
+34748.096950 ms OK ACK
+35015.864075 ms tick 35
+35202.029450 ms STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=35197 tx_dropped=0 rx_dropped=0
+36015.829750 ms tick 36
+37015.819925 ms tick 37
+38012.919650 ms tick 38
+39015.789000 ms tick 39
+40015.761425 ms tick 40
+41012.858150 ms tick 41
+42015.728500 ms tick 42
+43015.688650 ms tick 43
+44015.674825 ms tick 44
+45012.773300 ms tick 45
+46015.646150 ms tick 46
+47015.619325 ms tick 47
+48015.581000 ms tick 48
+49015.569650 ms tick 49
+50012.669400 ms tick 50
+51015.539000 ms tick 51
+52012.630475 ms tick 52
+52337.821200 ms EVENT seq=11 time_ms=52334 mode=TRANSPORT event=MODE_CHANGE source=UART previous=INSTALLED value=TRANSPORT unit=mode valid=1 alarm=0
+52351.163050 ms OK MODE TRANSPORT
+53015.484825 ms tick 53
+53126.954025 ms EVENT seq=12 time_ms=53123 mode=INSTALLED event=MODE_CHANGE source=UART previous=TRANSPORT value=INSTALLED unit=mode valid=1 alarm=0
+53140.279975 ms OK MODE INSTALLED
+53959.870900 ms EVENT seq=13 time_ms=53956 mode=TRANSPORT event=MODE_CHANGE source=UART previous=INSTALLED value=TRANSPORT unit=mode valid=1 alarm=0
+53975.791000 ms OK MODE TRANSPORT
+54015.466000 ms tick 54
+54777.943875 ms EVENT seq=14 time_ms=54774 mode=INSTALLED event=MODE_CHANGE source=UART previous=TRANSPORT value=INSTALLED unit=mode valid=1 alarm=0
+54791.278200 ms OK MODE INSTALLED
+55015.444650 ms tick 55
+55577.761450 ms EVENT seq=15 time_ms=55574 mode=TRANSPORT event=MODE_CHANGE source=UART previous=INSTALLED value=TRANSPORT unit=mode valid=1 alarm=0
+55591.103225 ms OK MODE TRANSPORT
+56012.543900 ms tick 56
+56359.687650 ms EVENT seq=16 time_ms=56356 mode=INSTALLED event=MODE_CHANGE source=UART previous=TRANSPORT value=INSTALLED unit=mode valid=1 alarm=0
+56375.675750 ms OK MODE INSTALLED
+57015.406500 ms tick 57
+57137.769200 ms EVENT seq=17 time_ms=57134 mode=TRANSPORT event=MODE_CHANGE source=UART previous=INSTALLED value=TRANSPORT unit=mode valid=1 alarm=0
+57151.082800 ms OK MODE TRANSPORT
+57977.932950 ms EVENT seq=18 time_ms=57974 mode=INSTALLED event=MODE_CHANGE source=UART previous=TRANSPORT value=INSTALLED unit=mode valid=1 alarm=0
+57991.246300 ms OK MODE INSTALLED
+58015.387150 ms tick 58
+58743.118775 ms EVENT seq=19 time_ms=58739 mode=TRANSPORT event=MODE_CHANGE source=UART previous=INSTALLED value=TRANSPORT unit=mode valid=1 alarm=0
+58756.427675 ms OK MODE TRANSPORT
+59012.482900 ms tick 59
+59510.051025 ms EVENT seq=20 time_ms=59506 mode=INSTALLED event=MODE_CHANGE source=UART previous=TRANSPORT value=INSTALLED unit=mode valid=1 alarm=0
+59523.372175 ms OK MODE INSTALLED
+60015.343750 ms tick 60
+60285.438125 ms EVENT seq=21 time_ms=60281 mode=TRANSPORT event=MODE_CHANGE source=UART previous=INSTALLED value=TRANSPORT unit=mode valid=1 alarm=0
+60298.778500 ms OK MODE TRANSPORT
+61015.320900 ms tick 61
+61060.552975 ms EVENT seq=22 time_ms=61056 mode=INSTALLED event=MODE_CHANGE source=UART previous=TRANSPORT value=INSTALLED unit=mode valid=1 alarm=0
+61075.613575 ms OK MODE INSTALLED
+61827.254500 ms EVENT seq=23 time_ms=61823 mode=TRANSPORT event=MODE_CHANGE source=UART previous=INSTALLED value=TRANSPORT unit=mode valid=1 alarm=0
+61840.575125 ms OK MODE TRANSPORT
+62015.294575 ms tick 62
+62609.858950 ms EVENT seq=24 time_ms=62606 mode=INSTALLED event=MODE_CHANGE source=UART previous=TRANSPORT value=INSTALLED unit=mode valid=1 alarm=0
+62623.174050 ms OK MODE INSTALLED
+63015.289000 ms tick 63
+63385.576025 ms EVENT seq=25 time_ms=63382 mode=TRANSPORT event=MODE_CHANGE source=UART previous=INSTALLED value=TRANSPORT unit=mode valid=1 alarm=0
+63398.900000 ms OK MODE TRANSPORT
+64012.499400 ms tick 64
+64160.593650 ms EVENT seq=26 time_ms=64157 mode=INSTALLED event=MODE_CHANGE source=UART previous=TRANSPORT value=INSTALLED unit=mode valid=1 alarm=0
+64175.549500 ms OK MODE INSTALLED
+64926.277925 ms EVENT seq=27 time_ms=64922 mode=TRANSPORT event=MODE_CHANGE source=UART previous=INSTALLED value=TRANSPORT unit=mode valid=1 alarm=0
+64939.608000 ms OK MODE TRANSPORT
+65015.224075 ms tick 65
+65710.210850 ms EVENT seq=28 time_ms=65706 mode=INSTALLED event=MODE_CHANGE source=UART previous=TRANSPORT value=INSTALLED unit=mode valid=1 alarm=0
+65723.536450 ms OK MODE INSTALLED
+66015.222250 ms tick 66
+66493.801775 ms EVENT seq=29 time_ms=66490 mode=TRANSPORT event=MODE_CHANGE source=UART previous=INSTALLED value=TRANSPORT unit=mode valid=1 alarm=0
+66507.130275 ms OK MODE TRANSPORT
+67015.181150 ms tick 67
+67285.003775 ms EVENT seq=30 time_ms=67281 mode=INSTALLED event=MODE_CHANGE source=UART previous=TRANSPORT value=INSTALLED unit=mode valid=1 alarm=0
+67298.321200 ms OK MODE INSTALLED
+67440.727075 ms ERR COMMAND
+68012.295150 ms tick 68
+68534.348525 ms EVENT seq=31 time_ms=68530 mode=TRANSPORT event=MODE_CHANGE source=UART previous=INSTALLED value=TRANSPORT unit=mode valid=1 alarm=0
+68547.671150 ms OK MODE TRANSPORT
+69015.148000 ms tick 69
+69879.886000 ms EVENT seq=32 time_ms=69874 mode=INSTALLED event=MODE_CHANGE source=UART previous=TRANSPORT value=INSTALLED unit=mode valid=1 alarm=0
+69895.711800 ms EVENT seq=33 time_ms=69874 mode=INSTALLED event=NEARBY source=PIR value=1 unit=bool secondary=0 secondary_unit=none valid=1 alarm=0
+69908.965250 ms OK MODE INSTALLED
+70015.131150 ms tick 70
+70666.124850 ms OK MODE INSTALLED
+71015.119825 ms tick 71
+71451.074500 ms EVENT seq=34 time_ms=71447 mode=TRANSPORT event=MODE_CHANGE source=UART previous=INSTALLED value=TRANSPORT unit=mode valid=1 alarm=0
+71464.413375 ms OK MODE TRANSPORT
+72012.331225 ms tick 72
+72297.522150 ms OK ACK
+72337.608025 ms EVENT seq=35 time_ms=72333 mode=TRANSPORT event=IMPACT source=IMU value=1828 unit=mg secondary=0 secondary_unit=mdps valid=1 alarm=1
+72664.978950 ms EVENT seq=36 time_ms=72661 mode=TRANSPORT event=LIGHT_CHANGE source=LDR value=4031 unit=ADC_code secondary=32 secondary_unit=ADC_code valid=1 alarm=1
+73012.301150 ms tick 73
+73384.688725 ms STATUS mode=TRANSPORT alarm=1 imu_valid=1 adc_raw=32 adc_valid=1 light_ready=1 E0=32 E=4063 pir=1 uptime_ms=73380 tx_dropped=0 rx_dropped=0

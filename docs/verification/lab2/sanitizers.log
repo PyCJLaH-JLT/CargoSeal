@@ -1,0 +1,24 @@
+mkdir -p build/Darwin-arm64
+cc -std=c11 -Wall -Wextra -Werror -g -fsanitize=address,undefined -fno-omit-frame-pointer test_sensors.c ../firmware/Sensors/mpu6050.c -lm -o build/Darwin-arm64/sensors
+mkdir -p build/Darwin-arm64
+cc -std=c11 -Wall -Wextra -Werror -g -fsanitize=address,undefined -fno-omit-frame-pointer test_light.c ../firmware/Sensors/light.c -lm -o build/Darwin-arm64/light
+mkdir -p build/Darwin-arm64
+cc -std=c11 -Wall -Wextra -Werror -g -fsanitize=address,undefined -fno-omit-frame-pointer test_policy.c ../firmware/Policy/container.c -lm -o build/Darwin-arm64/policy
+mkdir -p build/Darwin-arm64
+cc -std=c11 -Wall -Wextra -Werror -g -fsanitize=address,undefined -fno-omit-frame-pointer test_commands.c ../firmware/Policy/container.c ../firmware/Policy/commands.c -lm -o build/Darwin-arm64/commands
+mkdir -p build/Darwin-arm64
+cc -std=c11 -Wall -Wextra -Werror -g -fsanitize=address,undefined -fno-omit-frame-pointer test_acceptance.c ../firmware/Policy/container.c -lm -o build/Darwin-arm64/acceptance
+mkdir -p build/Darwin-arm64
+cc -std=c11 -Wall -Wextra -Werror -g -fsanitize=address,undefined -fno-omit-frame-pointer -Ifakes test_runtime.c ../firmware/Board/runtime.c ../firmware/Policy/container.c ../firmware/Policy/commands.c ../firmware/Sensors/mpu6050.c ../firmware/Sensors/light.c -lm -o build/Darwin-arm64/runtime
+./build/Darwin-arm64/sensors
+PASS: MPU init ordering, range, signed units, NACK/timeout, stale output
+./build/Darwin-arm64/light
+PASS: ADC endpoints, polarity, four samples, twenty sample baseline, PIR edges
+./build/Darwin-arm64/policy
+PASS: motion confirmation, impact boundary/priority, fault/recovery, independent PIR/light
+./build/Darwin-arm64/commands
+PASS: explicit modes, HIGH PIR transition, persistent alarm, ACK guard, LF parser and overflow
+./build/Darwin-arm64/acceptance
+PASS: T03-T12 numerical boundaries, 200/300/500ms timers, simultaneous events, mode transitions, wrap, invalid data
+./build/Darwin-arm64/runtime
+PASS: runtime 20/50ms schedule, LF, events, ACK, address fault/recovery and 20 STATUS/s at modeled 115200 UART

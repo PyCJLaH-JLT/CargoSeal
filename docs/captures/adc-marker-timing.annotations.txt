@@ -1,0 +1,7 @@
+timing-1: 71.650 μs (13.957 kHz)
+timing-1: 47.173 ms (21.199 Hz)
+timing-1: 71.650 μs (13.957 kHz)
+timing-1: 49.926 ms (20.030 Hz)
+timing-1: 71.650 μs (13.957 kHz)
+timing-1: 49.936 ms (20.026 Hz)
+timing-1: 71.700 μs (13.947 kHz)
