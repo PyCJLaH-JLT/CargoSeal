@@ -7,14 +7,14 @@ build = root / "tests/coverage"
 build.mkdir(parents=True, exist_ok=True)
 for f in build.glob("*"):
     if f.is_file(): f.unlink()
-modules = ["Sensors/mpu6050", "Sensors/light", "Policy/container", "Policy/commands"]
+modules = ["Sensors/mpu6050", "Sensors/light", "Policy/container", "Policy/commands", "Policy/custody_log"]
 objects = []
 for name in modules:
     obj = build / (Path(name).name + ".o")
     subprocess.run(["gcc","-std=c11","-Wall","-Wextra","-Werror","-O0","-g","--coverage","-c",
                     str(root / ("firmware/" + name + ".c")),"-o",str(obj)],check=True)
     objects.append(str(obj))
-for group in ("sensors","light","policy","commands","acceptance"):
+for group in ("sensors","light","policy","commands","acceptance","custody"):
     obj=build / ("test_"+group+".o")
     subprocess.run(["gcc","-std=c11","-Wall","-Wextra","-Werror","-g","-Dmain=run_"+group,
                     "-c",str(root / ("tests/test_"+group+".c")),"-o",str(obj)],check=True)

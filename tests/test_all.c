@@ -3,8 +3,9 @@ int run_light(void);
 int run_policy(void);
 int run_commands(void);
 int run_acceptance(void);
+int run_custody(void);
 int main(void)
 {
-    return run_sensors() || run_light() || run_policy() || run_commands() || run_acceptance();
+    return run_sensors() || run_light() || run_policy() || run_commands() || run_acceptance() || run_custody();
 }
 

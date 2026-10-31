@@ -3,6 +3,7 @@
 #include <assert.h>
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 I2C_HandleTypeDef hi2c1;
 UART_HandleTypeDef huart2;
 void HAL_UART_TxCpltCallback(UART_HandleTypeDef *);
@@ -55,9 +56,50 @@ static void run(unsigned ms)
 }
 static void inject(const char*s){for(;*s;++s){*rx_target=(uint8_t)*s;HAL_UART_RxCpltCallback(&huart2);}}
 static unsigned count(const char*needle){unsigned n=0;const char*p=output;while((p=strstr(p,needle))){++n;p+=strlen(needle);}return n;}
+extern void (*cs_fake_erase_hook)(void);
+static unsigned erase_events;
+static void during_erase(void)
+{
+ /* Explicit virtual-time contract test. No flash hardware or real time elapsed. */
+ now+=20;pir_high=true;inject("STATUS\n");now+=20;++erase_events;
+}
+static int scenario(const char *name)
+{
+ unsigned first_reads=imu_reads,first_adc=adc_reads;
+ if(!strcmp(name,"S1"))run(120000);
+ else if(!strcmp(name,"S2")){
+  for(unsigned i=0;i<30;++i){
+   run(119000);inject(i%2?"MODE INSTALLED\n":"MODE TRANSPORT\n");
+   az=10240;run(50);az=4096;run(950);
+  }
+  assert(imu_reads-first_reads>=180000 && adc_reads-first_adc==72000);
+  assert(count("event=IMPACT")==30 && count("event=MODE_CHANGE")==30);
+ }else if(!strcmp(name,"S3")){
+  cs_fake_erase_hook=during_erase;
+  for(unsigned i=0;i<60;++i){
+   pir_high=false;run(100);inject("LOG ERASE\n");run(100);
+   az=10240;adc_raw=3000;
+   for(unsigned j=0;j<10;++j){inject("STATUS\n");run(50);}
+   az=4096;adc_raw=4000;
+   for(unsigned j=0;j<26;++j){inject("STATUS\n");run(50);}
+   if(i==10)inject("IMU ADDRESS 0x69\n");
+   if(i==11)inject("IMU ADDRESS 0x68\n");
+  }
+  assert(erase_events==60 && count("event=NEARBY")==60);
+  assert(count("event=SENSOR_FAULT")==1 && count("event=SENSOR_RECOVERED")==1);
+ }else if(!strncmp(name,"RATE=",5)){
+  unsigned rate=(unsigned)strtoul(name+5,NULL,10);assert(rate && rate<=1000);
+  for(unsigned i=0;i<30000;++i){if(i*rate/1000U!=(i+1U)*rate/1000U)inject("STATUS\n");run(1);}
+ }else return 2;
+ run(2000);inject("STATS\nLOG STATUS\n");run(2000);
+ printf("HOST_MODEL scenario=%s source=actual_runtime_with_fake_HAL clock=1ms stack=unmeasured heap=unmeasured flash=RAM erase_model_ms=40 physical_power_cut=no\n",name);
+ printf("HOST_COUNTS imu=%u adc=%u erase_events=%u simulated_uptime_ms=%u\n",imu_reads-first_reads,adc_reads-first_adc,erase_events,now);
+ fputs(output,stdout);return 0;
+}
 int main(void)
 {
  registers[0x75]=0x68;cs_runtime_start();run(1600);
+ const char *requested=getenv("CS_SCENARIO");if(requested)return scenario(requested);
  assert(count("STM32C031C6 ready")==1 && count("CALIBRATION")==1);
  assert(imu_reads>=80 && adc_reads==33 && adc_max_gap==50);
  inject("MODE TRANSPORT");run(100);assert(count("OK MODE")==0);
@@ -76,8 +118,17 @@ int main(void)
  for(unsigned i=0;i<20;++i){inject("STATUS\n");run(50);}
  run(400);
  assert(count("STATUS mode=")==prior+20 && strstr(output,"tx_dropped=0 rx_dropped=0"));
+ prior=count("STATUS mode=");
+ unsigned selftests=count("SELFTEST device=MPU6050"), errors=count("ERR COMMAND");
+ inject("STATUS\rSELFTEST\r\nSTATUS\n");run(200);
+ assert(count("STATUS mode=")==prior+2);
+ assert(count("SELFTEST device=MPU6050")==selftests+1 && count("ERR COMMAND")==errors);
  assert(adc_max_gap==50);
- puts("PASS: runtime 20/50ms schedule, LF, events, ACK, address fault/recovery and 20 STATUS/s at modeled 115200 UART");
+ inject("STATS\nLOG STATUS\nLOG DUMP\n");run(1000);
+ assert(strstr(output,"STAT name=imu_pir") && strstr(output,"crc=OK") && strstr(output,"LOG DUMP END"));
+ inject("LOG ERASE\nLOG STATUS\n");run(200);
+ assert(strstr(output,"LOG ERASE ok=1") && strstr(output,"valid=0 damaged=0 next=0"));
+ puts("PASS: runtime 20/50ms schedule, CR/LF/CRLF UART replies, events, ACK, address fault/recovery and 20 STATUS/s at modeled 115200 UART");
  return 0;
 }
 
