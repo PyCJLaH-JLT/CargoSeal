@@ -4,3 +4,6 @@ wokwi.vcd
 *.swp
 tests/build/
 tests/coverage/
+__pycache__/
+*.pyc
+firmware/build-id.txt

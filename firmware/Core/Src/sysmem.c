@@ -28,6 +28,8 @@
  * Pointer to the current high watermark of the heap usage
  */
 static uint8_t *__sbrk_heap_end = NULL;
+static unsigned cs_heap_high;
+unsigned cs_heap_peak(void) { return cs_heap_high; }
 
 /**
  * @brief _sbrk() allocates memory to the newlib heap and is used by malloc
@@ -50,7 +52,7 @@ static uint8_t *__sbrk_heap_end = NULL;
  * @param incr Memory size
  * @return Pointer to allocated memory
  */
-void *_sbrk(ptrdiff_t incr)
+__attribute__((used, externally_visible)) void *_sbrk(ptrdiff_t incr)
 {
   extern uint8_t _end; /* Symbol defined in the linker script */
   extern uint8_t _estack; /* Symbol defined in the linker script */
@@ -74,6 +76,8 @@ void *_sbrk(ptrdiff_t incr)
 
   prev_heap_end = __sbrk_heap_end;
   __sbrk_heap_end += incr;
+  unsigned used=(unsigned)(__sbrk_heap_end-&_end);
+  if(used>cs_heap_high)cs_heap_high=used;
 
   return (void *)prev_heap_end;
 }

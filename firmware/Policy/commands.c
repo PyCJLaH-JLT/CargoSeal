@@ -3,15 +3,20 @@
 cs_command cs_command_parse(const char *line)
 {
     static const char *const strings[] = {"STATUS","ACK","MODE TRANSPORT","MODE INSTALLED",
-        "SELFTEST","READ IMU","IMU ADDRESS 0x68","IMU ADDRESS 0x69"};
+        "SELFTEST","READ IMU","IMU ADDRESS 0x68","IMU ADDRESS 0x69",
+        "STATS","LOG STATUS","LOG DUMP","LOG ERASE"};
     for (unsigned i=0;i<sizeof strings/sizeof strings[0];++i)
         if (strcmp(line,strings[i])==0) return (cs_command)(i+1U);
     return CS_CMD_ERROR;
 }
 bool cs_line_byte(cs_line_reader *s, unsigned char byte, cs_command *out)
 {
-    if (byte == '\n') {
-        if (s->length && s->line[s->length-1U]=='\r') --s->length;
+    if (s->after_cr) {
+        s->after_cr=false;
+        if (byte == '\n') return false;
+    }
+    if (byte == '\r' || byte == '\n') {
+        s->after_cr=byte == '\r';
         s->line[s->length]='\0';
         *out = s->overflow ? CS_CMD_ERROR : cs_command_parse(s->line);
         s->length=0; s->overflow=false;

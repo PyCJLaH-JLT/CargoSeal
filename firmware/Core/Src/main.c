@@ -24,6 +24,7 @@
 
 #include <stdio.h>
 #include "../../Board/runtime.h"
+#include "../../Board/diagnostics.h"
 
 /* USER CODE END Includes */
 
@@ -83,7 +84,7 @@ int __io_putchar(int ch)
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+  cs_stack_paint();
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/

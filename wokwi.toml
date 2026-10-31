@@ -2,3 +2,5 @@
 version = 1
 firmware = 'firmware/build/firmware.hex'
 elf = 'firmware/build/firmware.elf'
+rfc2217ServerPort = 43106
+vcdFile = 'docs/captures/lab3/current-run.vcd'

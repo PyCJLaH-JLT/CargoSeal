@@ -22,7 +22,7 @@ TARGET = firmware
 # debug build?
 DEBUG = 1
 # optimization
-OPT = -Og
+OPT = -Os -flto
 
 
 #######################################
@@ -37,7 +37,10 @@ BUILD_DIR = build
 # C sources
 C_SOURCES =  \
 Board/runtime.c \
+Board/diagnostics.c \
+Board/log_medium.c \
 Board/imu_bus.c \
+Policy/custody_log.c \
 Policy/container.c \
 Policy/commands.c \
 Sensors/mpu6050.c \
@@ -132,7 +135,8 @@ C_INCLUDES =  \
 # compile gcc flags
 ASFLAGS = $(MCU) $(AS_DEFS) $(AS_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections
 
-CFLAGS += $(MCU) $(C_DEFS) $(C_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections
+CFLAGS += $(MCU) $(C_DEFS) $(C_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections -fstack-usage -Wstack-usage=512
+CFLAGS += -DCS_BUILD_ID=\"$(shell cat build-id.txt 2>/dev/null || echo unversioned)\"
 
 ifeq ($(DEBUG), 1)
 CFLAGS += -g -gdwarf-2
@@ -153,7 +157,7 @@ LDSCRIPT = STM32C031C6Tx_FLASH.ld
 # libraries
 LIBS = -lc -lm -lnosys 
 LIBDIR = 
-LDFLAGS = $(MCU) -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections
+LDFLAGS = $(MCU) -flto -fstack-usage -save-temps=obj -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections,--print-memory-usage
 
 # default action: build all
 all: $(BUILD_DIR)/$(TARGET).elf $(BUILD_DIR)/$(TARGET).hex $(BUILD_DIR)/$(TARGET).bin
@@ -169,8 +173,8 @@ vpath %.c $(sort $(dir $(C_SOURCES)))
 OBJECTS += $(addprefix $(BUILD_DIR)/,$(notdir $(ASM_SOURCES:.s=.o)))
 vpath %.s $(sort $(dir $(ASM_SOURCES)))
 
-$(BUILD_DIR)/%.o: %.c Makefile | $(BUILD_DIR) 
-	$(CC) -c $(CFLAGS) $(if $(filter Drivers/%,$<),,$(OWN_FLAGS)) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
+$(BUILD_DIR)/%.o: %.c Makefile build-id.txt | $(BUILD_DIR)
+	$(CC) -c $(CFLAGS) $(if $(filter Drivers/%,$<),,$(OWN_FLAGS)) $< -o $@
 
 $(BUILD_DIR)/%.o: %.s Makefile | $(BUILD_DIR)
 	$(AS) -c $(CFLAGS) $< -o $@
@@ -187,6 +191,17 @@ $(BUILD_DIR)/%.bin: $(BUILD_DIR)/%.elf | $(BUILD_DIR)
 	
 $(BUILD_DIR):
 	mkdir -p $@		
+
+build-id.txt:
+	@test -f $@ || printf 'unversioned\n' > $@
+
+.PHONY: stack-audit
+stack-audit:
+	mkdir -p $(BUILD_DIR)/stack-audit
+	@for src in $(C_SOURCES); do \
+	  $(CC) -c $(MCU) $(C_DEFS) $(C_INCLUDES) -Os -fstack-usage -g \
+	    $$src -o $(BUILD_DIR)/stack-audit/$$(basename $$src .c).o || exit 1; \
+	done
 
 #######################################
 # clean up
