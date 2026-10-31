@@ -1,0 +1,12 @@
+{
+  "state": "recorded",
+  "error": null,
+  "verified_build": true,
+  "first_uptime_ms": 16160,
+  "last_uptime_ms": 136238,
+  "elapsed_mcu_seconds": 120.078,
+  "host_seconds": 128.08463354199193,
+  "sent_commands": 2411,
+  "raw_sha256": "167df38cfbcb6755cf31caddb71d0168d9d2ab817a1e607d4f6a641c86ae8fd6",
+  "note": "Recorded is not an FR pass. Inspect wire captures, dropped counters, MCU stack/heap and sensor conditions."
+}

@@ -1,0 +1,12 @@
+Board/runtime.c:52:17:tx_free	0	static
+Board/runtime.c:46:17:runtime_ms	16	static
+Board/runtime.c:54:13:text	288	static
+Board/runtime.c:94:13:event	80	static
+Board/runtime.c:177:13:log_status	64	static
+Board/runtime.c:158:13:selftest	16	static
+Board/runtime.c:138:13:adc_read	32	static
+Board/runtime.c:76:6:HAL_UART_TxCpltCallback	0	static
+Board/runtime.c:78:6:HAL_UART_RxCpltCallback	24	static
+Board/runtime.c:87:6:HAL_UART_ErrorCallback	8	static
+Board/runtime.c:243:6:cs_runtime_start	112	static
+Board/runtime.c:268:6:cs_runtime_poll	176	static

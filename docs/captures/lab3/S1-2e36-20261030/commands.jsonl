@@ -1,0 +1,31 @@
+{"host_monotonic": 107380.754177, "command": "STATS", "bytes": 6}
+{"host_monotonic": 107380.754305708, "command": "LOG STATUS", "bytes": 11}
+{"host_monotonic": 107380.754370416, "command": "STATUS", "bytes": 7}
+{"host_monotonic": 107381.755536583, "command": "STATUS", "bytes": 7}
+{"host_monotonic": 107386.7556055, "command": "STATUS", "bytes": 7}
+{"host_monotonic": 107391.756458375, "command": "STATUS", "bytes": 7}
+{"host_monotonic": 107396.757428125, "command": "STATUS", "bytes": 7}
+{"host_monotonic": 107401.758736458, "command": "STATUS", "bytes": 7}
+{"host_monotonic": 107406.758735708, "command": "STATUS", "bytes": 7}
+{"host_monotonic": 107411.761342208, "command": "STATUS", "bytes": 7}
+{"host_monotonic": 107416.763678208, "command": "STATUS", "bytes": 7}
+{"host_monotonic": 107421.765895083, "command": "STATUS", "bytes": 7}
+{"host_monotonic": 107426.766061375, "command": "STATUS", "bytes": 7}
+{"host_monotonic": 107431.767104083, "command": "STATUS", "bytes": 7}
+{"host_monotonic": 107436.768575708, "command": "STATUS", "bytes": 7}
+{"host_monotonic": 107441.768882041, "command": "STATUS", "bytes": 7}
+{"host_monotonic": 107446.768915291, "command": "STATUS", "bytes": 7}
+{"host_monotonic": 107451.76904875, "command": "STATUS", "bytes": 7}
+{"host_monotonic": 107456.769368916, "command": "STATUS", "bytes": 7}
+{"host_monotonic": 107461.770228125, "command": "STATUS", "bytes": 7}
+{"host_monotonic": 107466.770397458, "command": "STATUS", "bytes": 7}
+{"host_monotonic": 107471.771865833, "command": "STATUS", "bytes": 7}
+{"host_monotonic": 107476.773520208, "command": "STATUS", "bytes": 7}
+{"host_monotonic": 107481.775672375, "command": "STATUS", "bytes": 7}
+{"host_monotonic": 107486.775836291, "command": "STATUS", "bytes": 7}
+{"host_monotonic": 107491.778174625, "command": "STATUS", "bytes": 7}
+{"host_monotonic": 107496.778420333, "command": "STATUS", "bytes": 7}
+{"host_monotonic": 107501.780256583, "command": "STATUS", "bytes": 7}
+{"host_monotonic": 107503.810783416, "command": "STATS", "bytes": 6}
+{"host_monotonic": 107503.810879041, "command": "LOG STATUS", "bytes": 11}
+{"host_monotonic": 107503.810921708, "command": "LOG DUMP", "bytes": 9}

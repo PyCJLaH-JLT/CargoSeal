@@ -1,0 +1,153 @@
+HOST_MODEL scenario=S1 source=actual_runtime_with_fake_HAL clock=1ms stack=unmeasured heap=unmeasured flash=RAM erase_model_ms=40 physical_power_cut=no
+HOST_COUNTS imu=6200 adc=2480 erase_events=0 simulated_uptime_ms=125600
+STM32C031C6 ready
+BOOT CargoSeal build=host-unversioned mode=INSTALLED imu_period_ms=20 adc_period_ms=50 timer=TIM3_1MHz journal=internal_flash
+LOG boot=1 valid=0 damaged=0 next=0 capacity=102 pending=0 committed=0 dropped=0 failed=0 failures=0 full=0
+SELFTEST device=MPU6050 valid=1 result=0 address=0x68 accel_range_g=8 gyro_range_dps=250
+SELFTEST device=PIR gpio_readable=1 high=0
+SELFTEST device=LDR adc_valid=1 raw=4000 baseline_ready=0
+CALIBRATION time_ms=950 samples=20 E0=95 unit=ADC_code ready=1
+tick 1
+tick 2
+tick 3
+tick 4
+tick 5
+tick 6
+tick 7
+tick 8
+tick 9
+tick 10
+tick 11
+tick 12
+tick 13
+tick 14
+tick 15
+tick 16
+tick 17
+tick 18
+tick 19
+tick 20
+tick 21
+tick 22
+tick 23
+tick 24
+tick 25
+tick 26
+tick 27
+tick 28
+tick 29
+tick 30
+tick 31
+tick 32
+tick 33
+tick 34
+tick 35
+tick 36
+tick 37
+tick 38
+tick 39
+tick 40
+tick 41
+tick 42
+tick 43
+tick 44
+tick 45
+tick 46
+tick 47
+tick 48
+tick 49
+tick 50
+tick 51
+tick 52
+tick 53
+tick 54
+tick 55
+tick 56
+tick 57
+tick 58
+tick 59
+tick 60
+tick 61
+tick 62
+tick 63
+tick 64
+tick 65
+tick 66
+tick 67
+tick 68
+tick 69
+tick 70
+tick 71
+tick 72
+tick 73
+tick 74
+tick 75
+tick 76
+tick 77
+tick 78
+tick 79
+tick 80
+tick 81
+tick 82
+tick 83
+tick 84
+tick 85
+tick 86
+tick 87
+tick 88
+tick 89
+tick 90
+tick 91
+tick 92
+tick 93
+tick 94
+tick 95
+tick 96
+tick 97
+tick 98
+tick 99
+tick 100
+tick 101
+tick 102
+tick 103
+tick 104
+tick 105
+tick 106
+tick 107
+tick 108
+tick 109
+tick 110
+tick 111
+tick 112
+tick 113
+tick 114
+tick 115
+tick 116
+tick 117
+tick 118
+tick 119
+tick 120
+tick 121
+tick 122
+tick 123
+METRICS build=host-unversioned t_us=123601000 timer=TIM3_1MHz load_permille=0 load_max_permille=0
+MEMORY stack_used=0 stack_reserved=2048 heap_peak=0 tx_peak=448 rx_peak=17 tx_dropped=0 rx_dropped=0
+LOG boot=1 valid=0 damaged=0 next=0 capacity=102 pending=0 committed=0 dropped=0 failed=0 failures=0 full=0
+STAT name=loop n=123600 min_us=0 avg_us=0 max_us=0 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0
+HIST name=loop abs_jitter_bins_us=100,1000,5000,20000,inf counts=0,0,0,0,0
+STAT name=loop_period n=123600 min_us=1000 avg_us=1000 max_us=1000 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0
+HIST name=loop_period abs_jitter_bins_us=100,1000,5000,20000,inf counts=0,0,0,0,0
+STAT name=imu_pir n=6180 min_us=0 avg_us=0 max_us=0 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0
+HIST name=imu_pir abs_jitter_bins_us=100,1000,5000,20000,inf counts=6179,0,0,0,0
+STAT name=adc n=2472 min_us=0 avg_us=0 max_us=0 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0
+HIST name=adc abs_jitter_bins_us=100,1000,5000,20000,inf counts=2471,0,0,0,0
+STAT name=command n=0 min_us=0 avg_us=0 max_us=0 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0
+HIST name=command abs_jitter_bins_us=100,1000,5000,20000,inf counts=0,0,0,0,0
+STAT name=flash n=0 min_us=0 avg_us=0 max_us=0 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0
+HIST name=flash abs_jitter_bins_us=100,1000,5000,20000,inf counts=0,0,0,0,0
+STAT name=lf_dispatch n=1 min_us=1000 avg_us=1000 max_us=1000 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0
+HIST name=lf_dispatch abs_jitter_bins_us=100,1000,5000,20000,inf counts=0,0,0,0,0
+STAT name=tx_service n=128 min_us=0 avg_us=0 max_us=0 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0
+HIST name=tx_service abs_jitter_bins_us=100,1000,5000,20000,inf counts=0,0,0,0,0
+tick 124
+tick 125

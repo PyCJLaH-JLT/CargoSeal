@@ -1,0 +1,11 @@
+Policy/custody_log.c:3:17:load32	0	static
+Policy/custody_log.c:5:13:store32	0	static
+Policy/custody_log.c:7:10:cs_log_crc	16	static
+Policy/custody_log.c:14:10:cs_log_offset	16	static
+Policy/custody_log.c:16:6:cs_log_decode	48	static
+Policy/custody_log.c:26:6:cs_log_open	96	static
+Policy/custody_log.c:41:6:cs_log_enqueue	24	static
+Policy/custody_log.c:51:6:cs_log_step	32	static
+Policy/custody_log.c:67:17:cs_log_check_medium	72	static
+Policy/custody_log.c:80:6:cs_log_clear	72	static
+Policy/custody_log.c:89:6:cs_log_get	56	static

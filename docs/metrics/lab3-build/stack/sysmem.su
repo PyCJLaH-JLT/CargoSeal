@@ -1,0 +1,2 @@
+Core/Src/sysmem.c:32:10:cs_heap_peak	0	static
+Core/Src/sysmem.c:55:49:_sbrk	8	static

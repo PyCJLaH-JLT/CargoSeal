@@ -1,0 +1,6 @@
+Board/imu_bus.c:4:13:byte_guard	8	static
+Board/imu_bus.c:25:13:clear_transfer	0	static
+Board/imu_bus.c:15:22:wait_flag	24	static
+Board/imu_bus.c:35:22:send	32	static
+Board/imu_bus.c:51:15:cs_board_imu_read	32	static
+Board/imu_bus.c:75:15:cs_board_imu_write	24	static

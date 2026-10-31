@@ -1,0 +1,24 @@
+{
+  "status_count": 723,
+  "first_uptime_ms": 10531,
+  "last_uptime_ms": 3615155,
+  "backward_status_count": 0,
+  "max_status_step_ms": 5120,
+  "clock_fault_count": 0,
+  "event_count": 30,
+  "event_types": {
+    "NEARBY": 30
+  },
+  "first_event": "EVENT seq=1 t_us=60003000 time_ms=60003 mode=INSTALLED event=NEARBY source=PIR value=1 unit=bool secondary=0 secondary_unit=none valid=1 alarm=0",
+  "last_event": "EVENT seq=30 t_us=3540085000 time_ms=3540085 mode=INSTALLED event=NEARBY source=PIR value=1 unit=bool secondary=0 secondary_unit=none valid=1 alarm=0",
+  "last_status": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=3615155 tx_dropped=0 rx_dropped=0",
+  "last_stats": {
+    "metrics": "METRICS build=90392f53-2e36b428364c t_us=3617189000 timer=SysTick clock_resolution_us=1000 load_permille=148 load_max_permille=220",
+    "memory": "MEMORY stack_used=1168 stack_reserved=2048 heap_peak=0 tx_peak=1633 rx_peak=20 tx_dropped=0 rx_dropped=0",
+    "imu_pir": "STAT name=imu_pir n=180856 min_us=2000 avg_us=2026 max_us=5000 late_us=22000 missed=1 deadline=0 jitter_min_us=-13000 jitter_max_us=22000",
+    "adc": "STAT name=adc n=72342 min_us=0 avg_us=141 max_us=1000 late_us=18000 missed=0 deadline=0 jitter_min_us=-18000 jitter_max_us=18000",
+    "loop": "STAT name=loop n=24354906 min_us=0 avg_us=140 max_us=28000 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0",
+    "log": "LOG boot=1 valid=0 damaged=102 next=102 capacity=102 pending=0 committed=0 dropped=30 failed=0 failures=0 full=1",
+    "medium": "MEDIUM checked=4096 non_ff=4096 first=0 first_value=0x00"
+  }
+}

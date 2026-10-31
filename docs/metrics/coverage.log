@@ -1,0 +1,12 @@
+PASS: MPU init ordering, range, signed units, NACK/timeout, stale output
+PASS: ADC endpoints, polarity, four samples, twenty sample baseline, PIR edges
+PASS: motion confirmation, impact boundary/priority, fault/recovery, independent PIR/light
+PASS: explicit modes, HIGH PIR transition, persistent alarm, ACK guard, CR/LF/CRLF parser and overflow
+PASS: T03-T12 numerical boundaries, 200/300/500ms timers, simultaneous events, mode transitions, wrap, invalid data
+PASS: custody CRC vector, 41 cut positions, 320 bit corruptions, verify failure, queue, page crossing, 102-slot full, reboot
+Sensors/mpu6050: lines 28/28=100.00%, branch taken 22/22=100.00%
+Sensors/light: lines 17/17=100.00%, branch taken 12/12=100.00%
+Policy/container: lines 83/83=100.00%, branch taken 65/68=95.59%
+Policy/commands: lines 17/17=100.00%, branch taken 19/20=95.00%
+Policy/custody_log: lines 58/58=100.00%, branch taken 56/70=80.00%
+PASS: portable coverage >=90% lines and >=80% branch directions taken

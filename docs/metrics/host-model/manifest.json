@@ -1,0 +1,165 @@
+{
+  "utc": "2026-10-28T13:33:33.437395+00:00",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "command": [
+    "python3",
+    "tools/lab3_host.py"
+  ],
+  "binary_sha256": "25b73395b45dbd0e9a4a4cc84faed9b4e1344d4c6569f5291d58b7fb9a7d7a99",
+  "source_sha256": {
+    "firmware/Board/runtime.c": "0dddd82819d11e460ec9c534351ec01ba721b6d6bf5a7131becd75544d9e33d1",
+    "firmware/Board/log_medium.c": "54fe13a69463af6ceca04ae4a1deabe75d42d3ebf86db9b8b45496acf257fea8",
+    "firmware/Board/diagnostics.c": "0ec7e12dffa1db3322989b16e3add56ef181c4d2e67562cd7b49dd47e56e7507",
+    "firmware/Board/imu_bus.h": "0341fdaef75b37e8c93f4c4646819504b69caaccfa64ecddd4cc5d2230bbceee",
+    "firmware/Board/runtime.h": "621b0291083db4530f5a088b0200aac065e3526895a129486610ab422ad661e7",
+    "firmware/Board/log_medium.h": "6658120acbce42c5831d6fb401863b519cf8b7ef473604bb7bbd54c40cb01bb5",
+    "firmware/Board/diagnostics.h": "6e909aadabaa5bbcfe3049edb8bcbbc579cefd50ca0b3e48eb2434fa9ed7ecc3",
+    "firmware/Board/imu_bus.c": "4e26f33dee51e5333a185558cfaf4ff3953c6e16cbb9fe7adb2914c0ef131a53",
+    "firmware/Policy/container.h": "435239a2bff504196f7920a9d0555f5dbd934d5ea0d50dea3b6363c96a04468e",
+    "firmware/Policy/timing.h": "00f6a01612d50ef12d3c4d8399e0b981deda49bddc5ad3e794ba6b187bd85098",
+    "firmware/Policy/commands.h": "a63b0d38ebfe28d096937172e1b14476a5280b006ac76aa146416b14c6b9881c",
+    "firmware/Policy/custody_log.c": "4fa78803717b1ba3fcaf245b39fda7b458368bdd385535f7223a75eaf65dc493",
+    "firmware/Policy/container.c": "4f2ee681ead8da8a83c3a96c3e4745355a2c58fe85ce2867238fbb66f656c408",
+    "firmware/Policy/custody_log.h": "cd76d0eacafc7d01578fb36f5197d1ca9d3dcbfb8ec1162eb4e4d6300ba32e50",
+    "firmware/Policy/commands.c": "86541e8c51a3764a8acf84c314db6b195c16f9b03c64ed79d99af2084230de71",
+    "firmware/Sensors/light.h": "37cef8ed5d96ecb7fa105370c3e6a065973ab7724289930f76280e88cdc68d04",
+    "firmware/Sensors/register_bus.h": "64efe1d9782ed5c1d9b2b4856591e467afec36686ec91489e7dc62c70ea39546",
+    "firmware/Sensors/mpu6050.h": "c4b0959be124f87081f781d56a0b870ff4b204bc72779d853c14bf9331fd2315",
+    "firmware/Sensors/light.c": "a306c1d157e56cc716d1201b27312f87ad4ac74504d84041139b7a1bb256ad0c",
+    "firmware/Sensors/mpu6050.c": "202969dd6abc28e67f5c81eb7cd10692be001d40c242b78a628ad1995f421b45",
+    "firmware/Sensors/pir.h": "556a9ec64bd9c1ac98a27f0a6d1b0b95fd1f32b05c8f2b4dc4a6c44869689c93",
+    "tests/test_policy.c": "94702cea5987d03a0bbae3d854e81a8d434f5ffc5c317ac0001f01841562b01e",
+    "tests/test_acceptance.c": "fc7dc78f69dee1a1e460b7194d29d68ac64a13819cab4acdcb9420467a4c2b40",
+    "tests/test_sensors.c": "1c11f9b7ac075d94599440818c86fbc57f5baecb023b54bba115cd31f7246c49",
+    "tests/test_diagnostics.c": "8e5b6ba1d7a0e6c996c28f058af1fab4469c28d6835aea942668909e8ba80ada",
+    "tests/test_light.c": "bb332d22ec89cd886423de2805a6204752e02ec04da1f007d02a5900d3756a49",
+    "tests/test_runtime.c": "232141361f5156ad81fd8a5d2f8f5c791a2baa7bf0c76f444e680dd32d7ffe70",
+    "tests/test_custody.c": "762c7d360303460df268eb9cf745343d153cec3123a4ff23cdea7b2a3becf86b",
+    "tests/test_commands.c": "17c785e29db87416d3c7e1ea3fafb3bffdcf8ace40f016dc7ed4579dd3763a8d",
+    "tests/test_all.c": "05efff224a554ebffc7611f10e22d3368b0cef622dd7cfdb38fd2ac1c0a00601",
+    "tests/fakes/main.h": "b326a9cfd2db8aeefe13f5ba78577d917bb7c7ea63b4113990721cf701661472",
+    "tests/fakes/lab3_board.c": "af0c0bf6fd195b126ac71bf417e718fe6628477afcc348d2da5cb8254cce76ea",
+    "tests/fakes/imu_bus.c": "942d2a763253784c0c90edb82e54f1f0d9ac10517076af48f67af5531bf38ec2",
+    "tests/fixtures/mpu6050_observed.h": "774f5488aa499cb860df5fc9f0d907cc8f4c97418842a986a2ea4f4f0421d4f3"
+  },
+  "assumptions": "Virtual ms clock; RAM flash; UART TX duration ceil(N*10*1000/115200) ms; RX commands injected as bursts; S3 erase hook advances virtual clock 40 ms and injects PIR/UART at +20 ms. No real power, no MCU, no measured CPU/stack.",
+  "runs": [
+    {
+      "case": "S1",
+      "exit": 0,
+      "log": "S1.log",
+      "sha256": "8136529bb8356908db4690faf8bf6d6243f4aa213850f559130d0491b0f40b37",
+      "counts": [
+        "imu=6200 adc=2480 erase_events=0 simulated_uptime_ms=125600"
+      ],
+      "memory": [
+        "stack_used=0 stack_reserved=2048 heap_peak=0 tx_peak=448 rx_peak=17 tx_dropped=0 rx_dropped=0"
+      ],
+      "model_only": true
+    },
+    {
+      "case": "S2",
+      "exit": 0,
+      "log": "S2.log",
+      "sha256": "27a040a54977d29953b8121453e58f4c7c1fdb4eb019b6a0adc41ba668f3860e",
+      "counts": [
+        "imu=180200 adc=72080 erase_events=0 simulated_uptime_ms=3605600"
+      ],
+      "memory": [
+        "stack_used=0 stack_reserved=2048 heap_peak=0 tx_peak=448 rx_peak=17 tx_dropped=0 rx_dropped=0"
+      ],
+      "model_only": true
+    },
+    {
+      "case": "S3",
+      "exit": 0,
+      "log": "S3.log",
+      "sha256": "d02cda483ce83fb420df27cd9db31beed2b40274501ba4d6b2af88a45e1247cd",
+      "counts": [
+        "imu=6100 adc=2528 erase_events=60 simulated_uptime_ms=128000"
+      ],
+      "memory": [
+        "stack_used=0 stack_reserved=2048 heap_peak=0 tx_peak=448 rx_peak=17 tx_dropped=0 rx_dropped=0"
+      ],
+      "model_only": true
+    },
+    {
+      "case": "RATE=40",
+      "exit": 0,
+      "log": "RATE-40.log",
+      "sha256": "e843f61b61db3450cd1c7596ee289f94acf96c8bdc150d2d398a2780ab3070d1",
+      "counts": [
+        "imu=1700 adc=680 erase_events=0 simulated_uptime_ms=35600"
+      ],
+      "memory": [
+        "stack_used=0 stack_reserved=2048 heap_peak=0 tx_peak=448 rx_peak=17 tx_dropped=0 rx_dropped=0"
+      ],
+      "model_only": true
+    },
+    {
+      "case": "RATE=50",
+      "exit": 0,
+      "log": "RATE-50.log",
+      "sha256": "821dd172cbe84f511d1dc0366301517525e71cf790a41ad7ad75ee8410f64459",
+      "counts": [
+        "imu=1700 adc=680 erase_events=0 simulated_uptime_ms=35600"
+      ],
+      "memory": [
+        "stack_used=0 stack_reserved=2048 heap_peak=0 tx_peak=448 rx_peak=17 tx_dropped=0 rx_dropped=0"
+      ],
+      "model_only": true
+    },
+    {
+      "case": "RATE=60",
+      "exit": 0,
+      "log": "RATE-60.log",
+      "sha256": "e7f570fcf10282ea92dec29f2191f85c6dca076ac6db73a5a33a6f2c3b3f90b7",
+      "counts": [
+        "imu=1700 adc=680 erase_events=0 simulated_uptime_ms=35600"
+      ],
+      "memory": [
+        "stack_used=0 stack_reserved=2048 heap_peak=0 tx_peak=448 rx_peak=17 tx_dropped=0 rx_dropped=0"
+      ],
+      "model_only": true
+    },
+    {
+      "case": "RATE=80",
+      "exit": 0,
+      "log": "RATE-80.log",
+      "sha256": "4d7a4d19da28b1b9199c9ddb90e8f8c415074d5ec3554a5158a422f4542a6ba5",
+      "counts": [
+        "imu=1700 adc=680 erase_events=0 simulated_uptime_ms=35600"
+      ],
+      "memory": [
+        "stack_used=0 stack_reserved=2048 heap_peak=0 tx_peak=2047 rx_peak=17 tx_dropped=130 rx_dropped=0"
+      ],
+      "model_only": true
+    },
+    {
+      "case": "RATE=120",
+      "exit": 0,
+      "log": "RATE-120.log",
+      "sha256": "38dc4837fac56fd741995b0dd26e4c0a29ecafe9a14e3eb182761ad51e63ae42",
+      "counts": [
+        "imu=1700 adc=680 erase_events=0 simulated_uptime_ms=35600"
+      ],
+      "memory": [
+        "stack_used=0 stack_reserved=2048 heap_peak=0 tx_peak=2047 rx_peak=17 tx_dropped=1351 rx_dropped=0"
+      ],
+      "model_only": true
+    },
+    {
+      "case": "RATE=200",
+      "exit": 0,
+      "log": "RATE-200.log",
+      "sha256": "ac465754cf6dd49bd6dd045d0f15b04d1369afdf1433b07f7f96b913cb45ddca",
+      "counts": [
+        "imu=1700 adc=680 erase_events=0 simulated_uptime_ms=35600"
+      ],
+      "memory": [
+        "stack_used=0 stack_reserved=2048 heap_peak=0 tx_peak=2047 rx_peak=17 tx_dropped=3757 rx_dropped=0"
+      ],
+      "model_only": true
+    }
+  ]
+}

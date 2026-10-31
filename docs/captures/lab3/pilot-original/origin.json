@@ -1,0 +1,24 @@
+{
+  "origin": "Own Wokwi MCU run, official HAL uploader with CargoSeal local HEX and diagram; no Save/Fork; original invalid timebase",
+  "claimed_build_id": "90392f53-ad08d9e400ea",
+  "observed_boot_build": "unversioned",
+  "firmware_sha256": "09c626e6d122402dfa188202faee88c49417222a64ba8c2f9b1ad6f7bd150732",
+  "vcd_sha256": "9336c1fd5e6f9a4244290536a5c5e56969133b44da55ca2da21846cd79311237",
+  "first_tick_jump": {
+    "previous": {
+      "time_ns": 8032414525,
+      "text": "tick 8"
+    },
+    "current": {
+      "time_ns": 8327614125,
+      "text": "tick 4303"
+    }
+  },
+  "last_decoded_uart_time_s": 25.111356825,
+  "adc_period_median_us": 50001.85,
+  "flash_startup": "valid=0 damaged=102 full=1; full raw flash values/erase not measured in this run",
+  "status": "negative pilot; not S1/S2/S3; invalid MCU uptime, no hour claim",
+  "commands_attempted": [
+    "STATS through UI; no verified response in this run"
+  ]
+}

@@ -1,0 +1,10 @@
+Policy/container.c:4:13:emit	40	static
+Policy/timing.h:8:20:cs_confirm	8	static
+Policy/container.c:10:6:cs_container_init	16	static
+Policy/container.c:16:13:cs_mode_name	0	static
+Policy/container.c:18:13:cs_event_name	0	static
+Policy/container.c:24:6:cs_container_imu	56	static
+Policy/container.c:73:6:cs_container_pir	16	static
+Policy/container.c:78:6:cs_container_mode	32	static
+Policy/container.c:88:6:cs_container_ack	0	static
+Policy/container.c:95:6:cs_container_light	32	static

@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-30T07:50:42.580752+00:00",
+  "scenario": "S3",
+  "conditions": "VS Code Wokwi S3: PA1 GPIO generator 5 Hz, PIR output disconnected, 20 STATUS/s offered; frozen ELF; full flash; not a flash stall",
+  "url": "rfc2217://127.0.0.1:43106",
+  "requested_mcu_seconds": 120,
+  "requested_host_rate": 20.0,
+  "build_id": "90392f53-2e36b428364c",
+  "source_digest": "2e36b428364c4ff6e133ace4ec18829e669633edb3b7360aa2dc0225aec11e0e",
+  "firmware_artifacts": {
+    "firmware.map": "75874fa1a510726bc8a37029863b192392257a437803e6b3159fb801e1036f3c",
+    "firmware.elf": "4ed0f50d97b74b8b4ba2bb74a5432d72f866ca0757d987942e3dc1519fe7cb99",
+    "firmware.hex": "f58f338478d0ec680e9b86b99606d1ed6716295e95017a17d4317f7d4ad368bf",
+    "firmware.bin": "acde8588c57234f0a862b7eaa82148108911af7cb0d78476c6d58265d8f0ed64"
+  },
+  "pyserial": "3.5",
+  "clock_rule": "Duration from STATUS uptime_ms; host times only describe transmission/recording."
+}

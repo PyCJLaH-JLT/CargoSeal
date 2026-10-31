@@ -1,0 +1,34 @@
+make: Entering directory '/workspace/tests'
+mkdir -p build/lab3-linux-sanitized
+cc -std=c11 -Wall -Wextra -Werror -g -fsanitize=address,undefined -fno-omit-frame-pointer test_sensors.c ../firmware/Sensors/mpu6050.c -lm -o build/lab3-linux-sanitized/sensors
+mkdir -p build/lab3-linux-sanitized
+cc -std=c11 -Wall -Wextra -Werror -g -fsanitize=address,undefined -fno-omit-frame-pointer test_light.c ../firmware/Sensors/light.c -lm -o build/lab3-linux-sanitized/light
+mkdir -p build/lab3-linux-sanitized
+cc -std=c11 -Wall -Wextra -Werror -g -fsanitize=address,undefined -fno-omit-frame-pointer test_policy.c ../firmware/Policy/container.c -lm -o build/lab3-linux-sanitized/policy
+mkdir -p build/lab3-linux-sanitized
+cc -std=c11 -Wall -Wextra -Werror -g -fsanitize=address,undefined -fno-omit-frame-pointer test_commands.c ../firmware/Policy/container.c ../firmware/Policy/commands.c -lm -o build/lab3-linux-sanitized/commands
+mkdir -p build/lab3-linux-sanitized
+cc -std=c11 -Wall -Wextra -Werror -g -fsanitize=address,undefined -fno-omit-frame-pointer test_acceptance.c ../firmware/Policy/container.c -lm -o build/lab3-linux-sanitized/acceptance
+mkdir -p build/lab3-linux-sanitized
+cc -std=c11 -Wall -Wextra -Werror -g -fsanitize=address,undefined -fno-omit-frame-pointer -DCS_HOST_TEST -Ifakes test_runtime.c fakes/imu_bus.c fakes/lab3_board.c ../firmware/Board/runtime.c ../firmware/Board/diagnostics.c ../firmware/Policy/custody_log.c ../firmware/Policy/container.c ../firmware/Policy/commands.c ../firmware/Sensors/mpu6050.c ../firmware/Sensors/light.c -lm -o build/lab3-linux-sanitized/runtime
+mkdir -p build/lab3-linux-sanitized
+cc -std=c11 -Wall -Wextra -Werror -g -fsanitize=address,undefined -fno-omit-frame-pointer test_custody.c ../firmware/Policy/custody_log.c -o build/lab3-linux-sanitized/custody
+mkdir -p build/lab3-linux-sanitized
+cc -std=c11 -Wall -Wextra -Werror -g -fsanitize=address,undefined -fno-omit-frame-pointer -DCS_HOST_TEST test_diagnostics.c ../firmware/Board/diagnostics.c -o build/lab3-linux-sanitized/diagnostics
+./build/lab3-linux-sanitized/sensors
+PASS: MPU init ordering, range, signed units, NACK/timeout, stale output
+./build/lab3-linux-sanitized/light
+PASS: ADC endpoints, polarity, four samples, twenty sample baseline, PIR edges
+./build/lab3-linux-sanitized/policy
+PASS: motion confirmation, impact boundary/priority, fault/recovery, independent PIR/light
+./build/lab3-linux-sanitized/commands
+PASS: explicit modes, HIGH PIR transition, persistent alarm, ACK guard, CR/LF/CRLF parser and overflow
+./build/lab3-linux-sanitized/acceptance
+PASS: T03-T12 numerical boundaries, 200/300/500ms timers, simultaneous events, mode transitions, wrap, invalid data
+./build/lab3-linux-sanitized/runtime
+PASS: runtime 20/50ms schedule, CR/LF/CRLF UART replies, events, ACK, address fault/recovery and 20 STATUS/s at modeled 115200 UART
+./build/lab3-linux-sanitized/custody
+PASS: custody CRC vector, 41 cut positions, 320 bit corruptions, verify failure, queue, page crossing, 102-slot full, reboot
+./build/lab3-linux-sanitized/diagnostics
+PASS: microsecond wrap, jitter histogram, release lateness, skipped slots, duration min/sum/max
+make: Leaving directory '/workspace/tests'

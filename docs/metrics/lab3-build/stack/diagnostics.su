@@ -1,0 +1,8 @@
+Board/diagnostics.c:2:10:cs_ms_to_us	0	static
+Board/diagnostics.c:3:6:cs_perf_add	12	static
+Board/diagnostics.c:9:6:cs_perf_release	16	static
+Board/diagnostics.c:28:6:cs_perf_init	32	static
+Board/diagnostics.c:34:10:cs_perf_now	8	static
+Board/diagnostics.c:36:6:cs_probe	0	static
+Board/diagnostics.c:38:6:cs_stack_paint	0	static
+Board/diagnostics.c:44:10:cs_stack_used	0	static
