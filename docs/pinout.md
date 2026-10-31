@@ -12,10 +12,15 @@
 | PA3 | AF1 / USART2 RX | VCP USART2, окремий PA3 | Monitor TX | 3.3 В, без pull | DS13867 табл. 13; LF-команди |
 | PA5 | GPIO output | D13 / LD4 | LED плати | push-pull | UM2953 §6.10; тривога та heartbeat |
 | PA4 | GPIO output | CN8.3 / A2 | ADC_MARK, аналізатор D4 | push-pull | Вільний вивід для вимірювання виклику ADC |
+| PA6 | GPIO output | окремий PA6 | LOOP_MARK, D7 | push-pull | ЛР3, інтервал/тривалість циклу; від'єднувати тільки канал аналізатора у довгих сценаріях |
+| PA7 | GPIO output | окремий PA7 | IMU_MARK, D5 | push-pull | ЛР3, IMU та PIR task |
+| PA8 | GPIO output | окремий PA8 | FLASH_MARK, D6 | push-pull | ЛР3, program/erase |
 | PC13 | GPIO input / EXTI13 | B1 | Кнопка плати | конфігурація ЛР1 | Не керує режимами; натискання не змінює стан |
 | PA13/PA14 | SWD | debug | Налагодження | конфігурація ЛР1 | Не використовуються сенсорами |
 
-Порядок монтажу: спільна земля; MPU і LDR VCC до 3V3.1; PIR VCC до 5V.1, OUT моделі 3.3 В; MPU AD0 до GND.1. AO до PA0, DO вільний. Додати по одному 4.7 кОм від SDA/SCL до 3V3.1. Monitor TX до PA3, RX до PA2. Аналізатор D0=SCL, D1=SDA, D2=UART_TX, D3=PIR, D4=ADC_MARK, D5=UART_RX, D6=LED; GND спільна.
+Порядок монтажу: спільна земля; MPU і LDR VCC до 3V3.1; PIR VCC до 5V.1, OUT моделі 3.3 В; MPU AD0 до GND.1. AO до PA0, DO вільний. Додати по одному 4.7 кОм від SDA/SCL до 3V3.1. Monitor TX до PA3, RX до PA2. У ЛР3 аналізатор D0=SCL, D1=SDA, D2=UART_TX, D3=PIR, D4=ADC_MARK, D5=IMU_MARK, D6=FLASH_MARK, D7=LOOP_MARK, GND спільна. Старі записи ЛР2 мали D5=UART_RX і D6=LED; вони не перекодовуються під нову схему. У UART fixture D0 перепідключено до PA3, назву каналу змінено на UART_RX.
+
+Поточна версія використовує HAL SysTick, TIM3 не запускається. .ioc фіксує GPIO і резерв stack, але regeneration не відтворює linker journal region та власний I²C adapter. Після CubeMX потрібен огляд diff і повторний build/check.
 
 На фізичному PIR перевірити OUT до підключення. Не подавати 5 В на ADC. Врахувати резистори breakout, перш ніж додавати зовнішні pull-up. Числа струмів нижче є оцінками, симулятор їх не вимірює.
 

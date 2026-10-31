@@ -7,3 +7,9 @@ tests/coverage/
 __pycache__/
 *.pyc
 firmware/build-id.txt
+
+# Локальні build outputs і робочі captures, не архів результатів
+/docs/metrics/lab3-build/firmware.bin
+/docs/metrics/lab3-build/firmware.elf
+/docs/metrics/lab3-build/firmware.hex
+/tools/scenarios/*/current-run.vcd

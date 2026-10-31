@@ -1,0 +1,11 @@
+# Вимірювання ЛР3
+
+`lab3-build/manifest.json` пов'язує dirty HEAD, SHA всіх firmware sources, конфігурацію, image ID та ELF/HEX/BIN/map. Збірка `python3 tools/lab3_build.py`. Статичні секції з `size -A`; `size` агрегує вирівнювання та резерви, тому bss із короткого виводу не є лише глобальними змінними. JOURNAL показує 0 відсотків linker usage, бо записи виникають у runtime; 4096 bytes зарезервовано і виключено з code FLASH незалежно від цього числа.
+
+`stack/` містить окремий аудит кадрів `-Os -fstack-usage` без LTO. Production використовує LTO через ліміт flash. Ці .su не можна складати і називати фактичною глибиною production. `disassembly.log` належить справжньому ELF. Runtime stack painting має резерв 2048 bytes, early main залишає поточний frame і 128-byte guard незафарбованими. Вимір консервативний, при досягненні 2048 bytes це сигнал вичерпання резерву. `heap_peak` є піком arena `_sbrk`, а не malloc live bytes. Newlib printf може використовувати malloc, тому heap не оголошено нульовим без MCU-запуску.
+
+`host-model/` є окремими виконаннями справжнього C runtime на fake HAL з віртуальним часом. S2 містить 3600 virtual seconds, але не задовольняє вимогу годинного випробування на MCU/Wokwi. S3 має 60 модельних erase по 40 virtual ms, 60 PIR edges і UART events у їх середині. 40 ms задані в test hook, а не виміряні. Нульові durations, stack і heap у цих логах означають відсутність відповідної моделі виміру. Їх заборонено вносити у таблицю MCU як нульову вартість.
+
+Перший модельний sweep із втратою відповідей: 80 STATUS/s, 130 dropped за 30 s; 60/s без втрат у цій моделі. 120/s має 1351, 200/s має 3757 втрат. Це межа моделі UART/черги, не виміряна межа USART у Wokwi або реального C031. RX надходить burst-ами, TX 115200 8N1 із округленням до ms. Маніфест фіксує умови.
+
+Власні MCU/Wokwi S1/S2/S3 для ELF 4ed0f50d записані у captures/lab3. S1 120.490 s, S2 UART 3604.624 s, S3 120.078 s за MCU. S2 VCD обмежений до приблизно 146.6 s. Stack S1/S2/S3: 1164/1168/1240 B; heap arena peak 0 у snapshots, не гарантована верхня межа. SysTick квантує до 1 ms; GPIO/VCD має інше вікно і метод. LOAD не охоплює всі ISR і busy spin. Фізичний brownout, flash stall і retention не підтверджено. Результати ЛР2 збережені окремо.

@@ -1,0 +1,15 @@
+{
+  "source_sha256": "febfab436b0c8ee8db9393104074a5d0ba5fb014f14ec8c9d7d2bc319eacf1d6",
+  "channels": [
+    "SCL",
+    "SDA",
+    "UART_TX",
+    "PIR",
+    "ADC_MARK",
+    "IMU_MARK",
+    "FLASH_MARK"
+  ],
+  "last_adc_mark_ns": 146593322775,
+  "adc_period_median_ns": 49997725,
+  "note": "VCD buffer covers only the beginning, not the full S2 UART interval."
+}

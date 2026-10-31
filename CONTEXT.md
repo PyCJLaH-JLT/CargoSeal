@@ -1,6 +1,8 @@
 # Контекст CargoSeal
 Власник Літвінов Руслан Олексійович, ІО-36. Репозиторій продовжує ЛР1, форма B, фізичної плати немає.
 
+ЛР3 додає append-only custody journal 102×40 bytes у сторінках flash 14–15, чергу 8 events, CRC і commit doubleword, TIM3 1 MHz, GPIO PA4/6/7/8, STATS/LOG STATUS/DUMP/ERASE. Постійний журнал не відновлює активний TRANSPORT/alarm після reset. ARM LTO build і host tests пройшли, власні Wokwi S1/S2/S3 нової збірки очікують перевірки. Host virtual hour не є годиною Wokwi. Деталі: docs/tasks.md, metrics/README.md, limitations.md. Старі captures є доказами тільки ЛР2.
+
 Предметна модель: контейнер експоната, два явні режими TRANSPORT/INSTALLED, незалежний прапорець alarm. MODE змінює тільки режим і незавершені motion timers; baseline та вже зафіксовану тривогу зберігає. ACK очищує alarm після валідної норми IMU і світла 500 ms. MOVE і NEARBY інформаційні; DISTURBANCE, IMPACT та LIGHT_CHANGE тривожні. Остання подія означає можливий доступ за світловою ознакою.
 
 Core містить HAL init/IRQ; Board зв'язує периферію з Sensors і Policy. MPU6050 driver використовує register_bus callbacks; light driver калібрує E0 і фільтрує чотири значення. Policy не включає HAL. Дати перевірок та джерела власних сигналів знаходяться у docs/verification/lab2 і docs/captures/manifest.json.

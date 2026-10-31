@@ -1,0 +1,10 @@
+ALGORITHM cargoseal_loop
+CALL "SysTick, датчики, scan журналу"
+WHILE "Живлення активне" DO
+CALL "TX IT: до 128 bytes"
+CALL "IMU/PIR 20 ms, потім ADC 50 ms"
+CALL "RX: до 64 bytes, команди"
+CALL "Журнал: один doubleword"
+CALL "STATS/DUMP, LED, метрики"
+END WHILE
+END ALGORITHM

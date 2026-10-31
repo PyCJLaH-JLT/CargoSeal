@@ -7,7 +7,7 @@
 | sensors | WHO_AM_I, порядок п'яти записів, readback ±8 g/±250 °/с, signed big-endian, 4096 LSB/g та 131 LSB/(°/с), NACK/timeout на кожному кроці, невалідні ID/ranges, незмінність output після помилки |
 | light | raw 0/4095/4096, E=4095-raw, rolling mean чотирьох вимірів, baseline із 20 raw E, сталість baseline, PIR edge |
 | policy | 200 мс руху, пріоритет удару, один запис епізоду, fault/recovery, незалежні PIR/ADC та seq |
-| commands | Два явні режими, HIGH PIR при вході, повтор MODE, збереження alarm, ACK guard, LF/CRLF, NUL і довга команда |
+| commands | Два явні режими, HIGH PIR при вході, повтор MODE, збереження alarm, ACK guard, CR/LF/CRLF без дублювання, послідовні команди, NUL і довга команда |
 | acceptance | 2.49/2.50/2.51 g; 4.99/5 °/с; світло 599/600/601 та hysteresis 400/401; 199/200, 299/300, 499/500 мс; короткий імпульс; simultaneous PIR/IMPACT/LIGHT_CHANGE; очищення timer при MODE; invalid ADC; UINT32 wrap |
 | runtime | Штатні 20/50 мс; startup/20 samples; MODE лише після LF; ACK до/після норми; помилкова адреса та відновлення; PIR/ADC за недоступного IMU; 20 STATUS/s з UART-моделлю 115200, без queue loss |
 

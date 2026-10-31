@@ -1,0 +1,37 @@
+{
+  "source_sha256": "b1ffe6d05d2cf61e2b62988eef6c36461c5528ebef0dbdb3b7002fc4d96730a6",
+  "scope": "Wokwi signal time, never physical hardware timing",
+  "pir_to_event_complete_us": {
+    "n": 437,
+    "min": 24393.688888888897,
+    "avg": 29757.71281464626,
+    "max": 141120.36666666603,
+    "p99": 43616.547222229005
+  },
+  "pairing_assumption": "All observed PIR edges were in INSTALLED with no mode transitions that emit NEARBY.",
+  "method": "nearest preceding PA1 rising edge; UART line end estimated at nominal 115200 bit/s",
+  "adc": {
+    "width_us": {
+      "n": 1749,
+      "min": 89.175,
+      "avg": 106.7125786163522,
+      "max": 774.175,
+      "p99": 133.875
+    },
+    "period_us": {
+      "n": 1748,
+      "min": 23102.15,
+      "avg": 49999.793549771166,
+      "max": 77104.125,
+      "p99": 52841.175
+    },
+    "jitter_us": {
+      "n": 1748,
+      "min": -26897.85,
+      "avg": -0.20645022883414657,
+      "max": 27104.125,
+      "p99": 2841.175000000003
+    },
+    "intervals_over_2T": 0
+  }
+}
