@@ -1,0 +1,5 @@
+{
+  "port": 50784,
+  "fixture": "switch pin 2 SDA, pin 1 GND, initial closed, switch to pin 3 open to release; connected MPU remains present",
+  "diagram_sha256": "b328c8d3c6b5ee857bc3bbeb882e4515f809333bddf10622be84083e9d6921d9"
+}

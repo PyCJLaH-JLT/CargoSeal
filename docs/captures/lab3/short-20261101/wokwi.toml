@@ -1,0 +1,6 @@
+[wokwi]
+version = 1
+firmware = 'firmware.hex'
+elf = 'firmware.elf'
+rfc2217ServerPort = 50784
+vcdFile = 'short.vcd'

@@ -1,0 +1,1826 @@
+{
+  "sha256": "f052637f0894285eb0e28be0188401e309f5e920c9ee6822e2a9ef2d3611d33a",
+  "rx_lines": [
+    {
+      "time_ns": 14846669525,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 15254173525,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 15663277250,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 16071681000,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 16470784700,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 16879988400,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 17279892100,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 17688395825,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 18095799600,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 18505003550,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 35746295125,
+      "text": "STATS"
+    },
+    {
+      "time_ns": 36262900600,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 36788005400,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 37296010325,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 37796315150,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 38312920150,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 38812924725,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 39321229650,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 39837934375,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 40362939425,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 40871344350,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 41371248925,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 41879053600,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42396058325,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42900163500,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42924463550,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42925071725,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42925679875,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42926288050,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42926896200,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42927504350,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42928112525,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42928720675,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42929328850,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42929937000,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42930545150,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42931153325,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42931761475,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42932369650,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42932977800,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42933585950,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42934194125,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42934802275,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42935410450,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42936018600,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42936626750,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42937234925,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42937843075,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42938451250,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42939059400,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42939667550,
+      "text": "STATS"
+    },
+    {
+      "time_ns": 42940188850,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42940797000,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42941405150,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42942013325,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42942621475,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42943229650,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42943837800,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42944445950,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42945054125,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42945662275,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42946270450,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42946878600,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42947486775,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42948094925,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42948703075,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42949311250,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42949919400,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42950527550,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42951135725,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42951743875,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42952352050,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42952960200,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42953568350,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42954176525,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42954784675,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42955392850,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42956001000,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42956609150,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42957217325,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42957825475,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42958433650,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42959041800,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42959649950,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42960258125,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42960866275,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42961474450,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42962082600,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42962690750,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42963298925,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42963907075,
+      "text": "STATS"
+    },
+    {
+      "time_ns": 42964428350,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42965036525,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42965644675,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42966252850,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42966861000,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42967469150,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42968077325,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42968685475,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42969293650,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42969901800,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42970509950,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42971118125,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42971726275,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42972334450,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42972942600,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42973550750,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42974158925,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42974767075,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42975375250,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42975983400,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42976591550,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42977199725,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42977807875,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42978416050,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42979024200,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42979632350,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42980240525,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42980848675,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42981456850,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42982065000,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42982673150,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42983281325,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42983889475,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42984497650,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42985105800,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42985713950,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42986322125,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42986930275,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42987538450,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42988146600,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42988754750,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42989362925,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42989971075,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42990579250,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42991187400,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 42991795550,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 57568078750,
+      "text": "STATS"
+    },
+    {
+      "time_ns": 58109783950,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 58634089250,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 59171794325,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 59705599450,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 60238604850,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 60772309975,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 61305615625,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 61826221000,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 62350426025,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 62875531150,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 63417236425,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 63950441675,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 64476446825,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 65009251950,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 65542558100,
+      "text": "STATS"
+    },
+    {
+      "time_ns": 66059764075,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 66592969950,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 67117675100,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 67659281000,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 68193186375,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 68734692350,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 69259797650,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 69800603000,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 70326508425,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 70859113575,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 71376518850,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 71925624625,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 72443129325,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 72975634750,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 73509239625,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 74043145000,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 74568050300,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 75101155950,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 75634761325,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 76159766625,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 76701471875,
+      "text": "STATUS"
+    },
+    {
+      "time_ns": 77234777250,
+      "text": "STATUS"
+    }
+  ],
+  "tx_lines": [
+    {
+      "time_ns": 52570750,
+      "text": "STM32C031C6 ready"
+    },
+    {
+      "time_ns": 54464100,
+      "text": "BOOT CargoSeal build=90392f53-2e36b428364c mode=INSTALLED imu_period_ms=20 adc_period_ms=50 timer=SysTick clock_resolution_us=1000 journal=internal_flash"
+    },
+    {
+      "time_ns": 70375600,
+      "text": "LOG boot=1 valid=0 damaged=102 next=102 capacity=102 pending=0 committed=0 dropped=0 failed=0 failures=0 full=1"
+    },
+    {
+      "time_ns": 82051050,
+      "text": "MEDIUM checked=4096 non_ff=4096 first=0 first_value=0x00"
+    },
+    {
+      "time_ns": 87830750,
+      "text": "EVENT seq=1 t_us=44000 time_ms=44 mode=INSTALLED event=SENSOR_FAULT source=I2C value=2 unit=result_code secondary=0 secondary_unit=none valid=0 alarm=0"
+    },
+    {
+      "time_ns": 103497475,
+      "text": "SELFTEST device=MPU6050 valid=0 result=2 address=0x68 accel_range_g=8 gyro_range_dps=250"
+    },
+    {
+      "time_ns": 112938550,
+      "text": "SELFTEST device=PIR gpio_readable=1 high=0"
+    },
+    {
+      "time_ns": 117323150,
+      "text": "SELFTEST device=LDR adc_valid=1 raw=4063 baseline_ready=0"
+    },
+    {
+      "time_ns": 1002454450,
+      "text": "CALIBRATION time_ms=998 samples=20 E0=32 unit=ADC_code ready=1"
+    },
+    {
+      "time_ns": 1051871100,
+      "text": "tick 1"
+    },
+    {
+      "time_ns": 2061827075,
+      "text": "tick 2"
+    },
+    {
+      "time_ns": 3061805225,
+      "text": "tick 3"
+    },
+    {
+      "time_ns": 4061784900,
+      "text": "tick 4"
+    },
+    {
+      "time_ns": 5061763550,
+      "text": "tick 5"
+    },
+    {
+      "time_ns": 6061743475,
+      "text": "tick 6"
+    },
+    {
+      "time_ns": 7061584975,
+      "text": "tick 7"
+    },
+    {
+      "time_ns": 8061699825,
+      "text": "tick 8"
+    },
+    {
+      "time_ns": 9061678475,
+      "text": "tick 9"
+    },
+    {
+      "time_ns": 10061672400,
+      "text": "tick 10"
+    },
+    {
+      "time_ns": 11061736550,
+      "text": "tick 11"
+    },
+    {
+      "time_ns": 12061716225,
+      "text": "tick 12"
+    },
+    {
+      "time_ns": 13061554725,
+      "text": "tick 13"
+    },
+    {
+      "time_ns": 14061676550,
+      "text": "tick 14"
+    },
+    {
+      "time_ns": 14850428450,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=14844 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 15061652475,
+      "text": "tick 15"
+    },
+    {
+      "time_ns": 15257922225,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=15251 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 15666942200,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=15661 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 16061639400,
+      "text": "tick 16"
+    },
+    {
+      "time_ns": 16075455425,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=16069 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 16474543625,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=16468 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 16883656100,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=16877 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 17061622050,
+      "text": "tick 17"
+    },
+    {
+      "time_ns": 17283596750,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=17277 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 17692137000,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=17686 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 18061599725,
+      "text": "tick 18"
+    },
+    {
+      "time_ns": 18099548750,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=18093 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 18508771500,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=18502 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 19061580150,
+      "text": "tick 19"
+    },
+    {
+      "time_ns": 20061564550,
+      "text": "tick 20"
+    },
+    {
+      "time_ns": 21061540475,
+      "text": "tick 21"
+    },
+    {
+      "time_ns": 22061523650,
+      "text": "tick 22"
+    },
+    {
+      "time_ns": 23061359650,
+      "text": "tick 23"
+    },
+    {
+      "time_ns": 24061341050,
+      "text": "tick 24"
+    },
+    {
+      "time_ns": 25061461150,
+      "text": "tick 25"
+    },
+    {
+      "time_ns": 26061438325,
+      "text": "tick 26"
+    },
+    {
+      "time_ns": 27061279800,
+      "text": "tick 27"
+    },
+    {
+      "time_ns": 28061394150,
+      "text": "tick 28"
+    },
+    {
+      "time_ns": 29061238900,
+      "text": "tick 29"
+    },
+    {
+      "time_ns": 30061358225,
+      "text": "tick 30"
+    },
+    {
+      "time_ns": 31061334150,
+      "text": "tick 31"
+    },
+    {
+      "time_ns": 32061312825,
+      "text": "tick 32"
+    },
+    {
+      "time_ns": 33061287475,
+      "text": "tick 33"
+    },
+    {
+      "time_ns": 34061270400,
+      "text": "tick 34"
+    },
+    {
+      "time_ns": 35061247575,
+      "text": "tick 35"
+    },
+    {
+      "time_ns": 35754377950,
+      "text": "METRICS build=90392f53-2e36b428364c t_us=35744000 timer=SysTick clock_resolution_us=1000 load_permille=58 load_max_permille=81"
+    },
+    {
+      "time_ns": 35767510175,
+      "text": "MEMORY stack_used=1164 stack_reserved=2048 heap_peak=0 tx_peak=691 rx_peak=4 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 35777873775,
+      "text": "STAT name=loop n=295794 min_us=0 avg_us=113 max_us=11000 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0"
+    },
+    {
+      "time_ns": 35792939550,
+      "text": "HIST name=loop abs_jitter_bins_us=100,1000,5000,20000,inf counts=0,0,0,0,0"
+    },
+    {
+      "time_ns": 35800904100,
+      "text": "STAT name=loop_period n=295794 min_us=0 avg_us=120 max_us=11000 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0"
+    },
+    {
+      "time_ns": 35814000225,
+      "text": "HIST name=loop_period abs_jitter_bins_us=100,1000,5000,20000,inf counts=0,0,0,0,0"
+    },
+    {
+      "time_ns": 35822271175,
+      "text": "STAT name=imu_pir n=1784 min_us=0 avg_us=196 max_us=10000 late_us=1000 missed=0 deadline=0 jitter_min_us=-1000 jitter_max_us=1000"
+    },
+    {
+      "time_ns": 35836296175,
+      "text": "HIST name=imu_pir abs_jitter_bins_us=100,1000,5000,20000,inf counts=1781,0,2,0,0"
+    },
+    {
+      "time_ns": 35844467475,
+      "text": "STAT name=adc n=713 min_us=0 avg_us=0 max_us=0 late_us=10000 missed=0 deadline=0 jitter_min_us=-10000 jitter_max_us=10000"
+    },
+    {
+      "time_ns": 35857145225,
+      "text": "HIST name=adc abs_jitter_bins_us=100,1000,5000,20000,inf counts=656,0,0,56,0"
+    },
+    {
+      "time_ns": 35865294925,
+      "text": "STAT name=command n=10 min_us=2000 avg_us=2800 max_us=3000 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0"
+    },
+    {
+      "time_ns": 35877939700,
+      "text": "HIST name=command abs_jitter_bins_us=100,1000,5000,20000,inf counts=0,0,0,0,0"
+    },
+    {
+      "time_ns": 35885812050,
+      "text": "STAT name=flash n=0 min_us=0 avg_us=0 max_us=0 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0"
+    },
+    {
+      "time_ns": 35897194100,
+      "text": "HIST name=flash abs_jitter_bins_us=100,1000,5000,20000,inf counts=0,0,0,0,0"
+    },
+    {
+      "time_ns": 35905250850,
+      "text": "STAT name=lf_dispatch n=11 min_us=0 avg_us=90 max_us=1000 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0"
+    },
+    {
+      "time_ns": 35917795225,
+      "text": "HIST name=lf_dispatch abs_jitter_bins_us=100,1000,5000,20000,inf counts=0,0,0,0,0"
+    },
+    {
+      "time_ns": 35926066175,
+      "text": "STAT name=tx_service n=62 min_us=0 avg_us=80 max_us=1000 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0"
+    },
+    {
+      "time_ns": 35938445475,
+      "text": "HIST name=tx_service abs_jitter_bins_us=100,1000,5000,20000,inf counts=0,0,0,0,0"
+    },
+    {
+      "time_ns": 36061232225,
+      "text": "tick 36"
+    },
+    {
+      "time_ns": 36266608275,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=36261 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 36799946650,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=36794 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 37061206150,
+      "text": "tick 37"
+    },
+    {
+      "time_ns": 37299715750,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=37294 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 37800010250,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=37794 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 38061190075,
+      "text": "tick 38"
+    },
+    {
+      "time_ns": 38316703550,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=38311 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 38816623650,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=38811 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 39061165475,
+      "text": "tick 39"
+    },
+    {
+      "time_ns": 39324940800,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=39319 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 39841632775,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=39836 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 40061146900,
+      "text": "tick 40"
+    },
+    {
+      "time_ns": 40374807425,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=40369 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 40875131775,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=40869 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 41061120825,
+      "text": "tick 41"
+    },
+    {
+      "time_ns": 41374926600,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=41369 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 41882819000,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=41877 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 42061106725,
+      "text": "tick 42"
+    },
+    {
+      "time_ns": 42399744750,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=42394 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 42903950500,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=42898 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 42989102525,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=42923 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 43017363650,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=42929 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 43043201800,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=42936 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 43068506450,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=42942 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 43101827025,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=42949 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 43126826750,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=42955 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 43154229375,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=42962 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 43177226150,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=42968 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 43200348625,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=42974 tx_dropped=0 rx_dropped=35"
+    },
+    {
+      "time_ns": 43214940925,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=42980 tx_dropped=0 rx_dropped=94"
+    },
+    {
+      "time_ns": 43229900550,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=42987 tx_dropped=0 rx_dropped=171"
+    },
+    {
+      "time_ns": 43244587025,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=42992 tx_dropped=0 rx_dropped=194"
+    },
+    {
+      "time_ns": 43259225725,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=42995 tx_dropped=0 rx_dropped=194"
+    },
+    {
+      "time_ns": 43273899025,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=42998 tx_dropped=0 rx_dropped=194"
+    },
+    {
+      "time_ns": 43288587550,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=43001 tx_dropped=0 rx_dropped=194"
+    },
+    {
+      "time_ns": 43303258500,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=43014 tx_dropped=4 rx_dropped=194"
+    },
+    {
+      "time_ns": 43317994275,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=43038 tx_dropped=13 rx_dropped=194"
+    },
+    {
+      "time_ns": 43332781975,
+      "text": "tick 43"
+    },
+    {
+      "time_ns": 43333678825,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=43094 tx_dropped=30 rx_dropped=194"
+    },
+    {
+      "time_ns": 43348825425,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=43118 tx_dropped=38 rx_dropped=194"
+    },
+    {
+      "time_ns": 43363632450,
+      "text": "ERR STATS BUSY"
+    },
+    {
+      "time_ns": 43365226850,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=43144 tx_dropped=47 rx_dropped=194"
+    },
+    {
+      "time_ns": 43379964675,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=43166 tx_dropped=54 rx_dropped=194"
+    },
+    {
+      "time_ns": 43394789125,
+      "text": "ERR COMMAND"
+    },
+    {
+      "time_ns": 43396084575,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=43187 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 43411007350,
+      "text": "STAT name=loop n=353025 min_us=0 avg_us=114 max_us=63000 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0"
+    },
+    {
+      "time_ns": 43423354525,
+      "text": "HIST name=loop abs_jitter_bins_us=100,1000,5000,20000,inf counts=0,0,0,0,0"
+    },
+    {
+      "time_ns": 43431364675,
+      "text": "STAT name=loop_period n=353025 min_us=0 avg_us=121 max_us=63000 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0"
+    },
+    {
+      "time_ns": 43444436650,
+      "text": "HIST name=loop_period abs_jitter_bins_us=100,1000,5000,20000,inf counts=0,0,0,0,0"
+    },
+    {
+      "time_ns": 43452707600,
+      "text": "STAT name=imu_pir n=2145 min_us=0 avg_us=196 max_us=10000 late_us=58000 missed=2 deadline=0 jitter_min_us=-2000 jitter_max_us=58000"
+    },
+    {
+      "time_ns": 43466445325,
+      "text": "HIST name=imu_pir abs_jitter_bins_us=100,1000,5000,20000,inf counts=2137,0,5,1,1"
+    },
+    {
+      "time_ns": 43475031125,
+      "text": "STAT name=adc n=859 min_us=0 avg_us=1 max_us=1000 late_us=39000 missed=0 deadline=0 jitter_min_us=-24000 jitter_max_us=39000"
+    },
+    {
+      "time_ns": 43488002025,
+      "text": "HIST name=adc abs_jitter_bins_us=100,1000,5000,20000,inf counts=784,0,2,70,2"
+    },
+    {
+      "time_ns": 43496242850,
+      "text": "STAT name=command n=50 min_us=2000 avg_us=3280 max_us=6000 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0"
+    },
+    {
+      "time_ns": 43508831625,
+      "text": "HIST name=command abs_jitter_bins_us=100,1000,5000,20000,inf counts=0,0,0,0,0"
+    },
+    {
+      "time_ns": 43516703975,
+      "text": "STAT name=flash n=0 min_us=0 avg_us=0 max_us=0 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0"
+    },
+    {
+      "time_ns": 43528079325,
+      "text": "HIST name=flash abs_jitter_bins_us=100,1000,5000,20000,inf counts=0,0,0,0,0"
+    },
+    {
+      "time_ns": 43536221125,
+      "text": "STAT name=lf_dispatch n=51 min_us=0 avg_us=29411 max_us=93000 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0"
+    },
+    {
+      "time_ns": 43549092600,
+      "text": "HIST name=lf_dispatch abs_jitter_bins_us=100,1000,5000,20000,inf counts=0,0,0,0,0"
+    },
+    {
+      "time_ns": 43557363500,
+      "text": "STAT name=tx_service n=114 min_us=0 avg_us=157 max_us=1000 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0"
+    },
+    {
+      "time_ns": 43569951975,
+      "text": "HIST name=tx_service abs_jitter_bins_us=100,1000,5000,20000,inf counts=0,0,0,0,0"
+    },
+    {
+      "time_ns": 44063884825,
+      "text": "tick 44"
+    },
+    {
+      "time_ns": 45063836000,
+      "text": "tick 45"
+    },
+    {
+      "time_ns": 46063791900,
+      "text": "tick 46"
+    },
+    {
+      "time_ns": 47063871325,
+      "text": "tick 47"
+    },
+    {
+      "time_ns": 48063849750,
+      "text": "tick 48"
+    },
+    {
+      "time_ns": 48086987000,
+      "text": "EVENT seq=2 t_us=48081000 time_ms=48081 mode=INSTALLED event=SENSOR_RECOVERED source=I2C value=0 unit=result_code secondary=0 secondary_unit=none valid=1 alarm=0"
+    },
+    {
+      "time_ns": 49063820900,
+      "text": "tick 49"
+    },
+    {
+      "time_ns": 50063722075,
+      "text": "tick 50"
+    },
+    {
+      "time_ns": 51063736500,
+      "text": "tick 51"
+    },
+    {
+      "time_ns": 52063711400,
+      "text": "tick 52"
+    },
+    {
+      "time_ns": 53063719325,
+      "text": "tick 53"
+    },
+    {
+      "time_ns": 54063667750,
+      "text": "tick 54"
+    },
+    {
+      "time_ns": 55063653650,
+      "text": "tick 55"
+    },
+    {
+      "time_ns": 56063678075,
+      "text": "tick 56"
+    },
+    {
+      "time_ns": 57063570250,
+      "text": "tick 57"
+    },
+    {
+      "time_ns": 57569113450,
+      "text": "ERR COMMAND"
+    },
+    {
+      "time_ns": 58063663150,
+      "text": "tick 58"
+    },
+    {
+      "time_ns": 58113528625,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=58108 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 58637876950,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=58632 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 59063553825,
+      "text": "tick 59"
+    },
+    {
+      "time_ns": 59175632750,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=59170 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 59709378125,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=59704 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 60063605000,
+      "text": "tick 60"
+    },
+    {
+      "time_ns": 60242454000,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=60237 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 60776062375,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=60770 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 61063560650,
+      "text": "tick 61"
+    },
+    {
+      "time_ns": 61309435525,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=61304 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 61830077175,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=61825 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 62063482325,
+      "text": "tick 62"
+    },
+    {
+      "time_ns": 62354169250,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=62349 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 62882134250,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=62877 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 63063518750,
+      "text": "tick 63"
+    },
+    {
+      "time_ns": 63422012500,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=63417 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 63954246175,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=63949 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 64063485650,
+      "text": "tick 64"
+    },
+    {
+      "time_ns": 64482070175,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=64477 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 65012999875,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=65008 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 65063440825,
+      "text": "tick 65"
+    },
+    {
+      "time_ns": 65550827425,
+      "text": "METRICS build=90392f53-2e36b428364c t_us=65541000 timer=SysTick clock_resolution_us=1000 load_permille=167 load_max_permille=209"
+    },
+    {
+      "time_ns": 65567001900,
+      "text": "MEMORY stack_used=1164 stack_reserved=2048 heap_peak=0 tx_peak=2039 rx_peak=511 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 65577963400,
+      "text": "STAT name=loop n=514520 min_us=0 avg_us=119 max_us=63000 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0"
+    },
+    {
+      "time_ns": 65595850550,
+      "text": "HIST name=loop abs_jitter_bins_us=100,1000,5000,20000,inf counts=0,0,0,0,0"
+    },
+    {
+      "time_ns": 65604544950,
+      "text": "STAT name=loop_period n=514520 min_us=0 avg_us=127 max_us=63000 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0"
+    },
+    {
+      "time_ns": 65617589175,
+      "text": "HIST name=loop_period abs_jitter_bins_us=100,1000,5000,20000,inf counts=0,0,0,0,0"
+    },
+    {
+      "time_ns": 65626314825,
+      "text": "STAT name=imu_pir n=3270 min_us=0 avg_us=683 max_us=10000 late_us=58000 missed=3 deadline=0 jitter_min_us=-13000 jitter_max_us=58000"
+    },
+    {
+      "time_ns": 65640615875,
+      "text": "HIST name=imu_pir abs_jitter_bins_us=100,1000,5000,20000,inf counts=3244,0,19,5,1"
+    },
+    {
+      "time_ns": 65648886825,
+      "text": "STAT name=adc n=1309 min_us=0 avg_us=1 max_us=1000 late_us=39000 missed=0 deadline=0 jitter_min_us=-24000 jitter_max_us=39000"
+    },
+    {
+      "time_ns": 65661929850,
+      "text": "HIST name=adc abs_jitter_bins_us=100,1000,5000,20000,inf counts=1230,0,4,72,2"
+    },
+    {
+      "time_ns": 65670260200,
+      "text": "STAT name=command n=124 min_us=0 avg_us=2693 max_us=6000 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0"
+    },
+    {
+      "time_ns": 65683025825,
+      "text": "HIST name=command abs_jitter_bins_us=100,1000,5000,20000,inf counts=0,0,0,0,0"
+    },
+    {
+      "time_ns": 65690898175,
+      "text": "STAT name=flash n=0 min_us=0 avg_us=0 max_us=0 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0"
+    },
+    {
+      "time_ns": 65702231950,
+      "text": "HIST name=flash abs_jitter_bins_us=100,1000,5000,20000,inf counts=0,0,0,0,0"
+    },
+    {
+      "time_ns": 65710376750,
+      "text": "STAT name=lf_dispatch n=125 min_us=0 avg_us=85712 max_us=211000 late_us=0 missed=0 deadline=55 jitter_min_us=0 jitter_max_us=0"
+    },
+    {
+      "time_ns": 65724080200,
+      "text": "HIST name=lf_dispatch abs_jitter_bins_us=100,1000,5000,20000,inf counts=0,0,0,0,0"
+    },
+    {
+      "time_ns": 65732724150,
+      "text": "STAT name=tx_service n=203 min_us=0 avg_us=211 max_us=1000 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0"
+    },
+    {
+      "time_ns": 65744879275,
+      "text": "HIST name=tx_service abs_jitter_bins_us=100,1000,5000,20000,inf counts=0,0,0,0,0"
+    },
+    {
+      "time_ns": 66063844250,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=66058 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 66080536800,
+      "text": "tick 66"
+    },
+    {
+      "time_ns": 66596766375,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=66591 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 67063373150,
+      "text": "tick 67"
+    },
+    {
+      "time_ns": 67122208425,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=67117 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 67663064900,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=67658 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 68063425075,
+      "text": "tick 68"
+    },
+    {
+      "time_ns": 68197019525,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=68192 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 68738466250,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=68733 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 69063399500,
+      "text": "tick 69"
+    },
+    {
+      "time_ns": 69263636825,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=69258 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 69804404050,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=69799 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 70063360150,
+      "text": "tick 70"
+    },
+    {
+      "time_ns": 70330355350,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=70325 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 70862864500,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=70858 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 71063324575,
+      "text": "tick 71"
+    },
+    {
+      "time_ns": 71381845925,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=71377 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 71929371525,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=71924 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 72063332000,
+      "text": "tick 72"
+    },
+    {
+      "time_ns": 72446937500,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=72442 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 72981927600,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=72977 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 73063294400,
+      "text": "tick 73"
+    },
+    {
+      "time_ns": 73513063525,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=73508 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 74046970650,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=74042 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 74063315325,
+      "text": "tick 74"
+    },
+    {
+      "time_ns": 74571838725,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=74567 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 75063228750,
+      "text": "tick 75"
+    },
+    {
+      "time_ns": 75104932125,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=75100 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 75638601250,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=75633 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 76063288650,
+      "text": "tick 76"
+    },
+    {
+      "time_ns": 76163503325,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=76158 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 76705263775,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=76700 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 77063227575,
+      "text": "tick 77"
+    },
+    {
+      "time_ns": 77238608925,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=77233 tx_dropped=61 rx_dropped=194"
+    },
+    {
+      "time_ns": 78063240500,
+      "text": "tick 78"
+    },
+    {
+      "time_ns": 79063109650,
+      "text": "tick 79"
+    },
+    {
+      "time_ns": 80063159825,
+      "text": "tick 80"
+    },
+    {
+      "time_ns": 81063164250,
+      "text": "tick 81"
+    },
+    {
+      "time_ns": 82063065900,
+      "text": "tick 82"
+    },
+    {
+      "time_ns": 83063077075,
+      "text": "tick 83"
+    }
+  ],
+  "sda_low_intervals_over_100ms": [
+    {
+      "start_ns": 0,
+      "end_ns": 47093071725,
+      "duration_ms": 47093.071725
+    }
+  ],
+  "status_after_58s": {
+    "request_count": 36,
+    "pairs": [
+      {
+        "rx_start_ns": 58109783950,
+        "response_start_ns": 58113528625,
+        "latency_complete_us": 15637.036111114501
+      },
+      {
+        "rx_start_ns": 58634089250,
+        "response_start_ns": 58637876950,
+        "latency_complete_us": 15680.061111114503
+      },
+      {
+        "rx_start_ns": 59171794325,
+        "response_start_ns": 59175632750,
+        "latency_complete_us": 15730.786111114501
+      },
+      {
+        "rx_start_ns": 59705599450,
+        "response_start_ns": 59709378125,
+        "latency_complete_us": 15671.036111114501
+      },
+      {
+        "rx_start_ns": 60238604850,
+        "response_start_ns": 60242454000,
+        "latency_complete_us": 15741.511111114502
+      },
+      {
+        "rx_start_ns": 60772309975,
+        "response_start_ns": 60776062375,
+        "latency_complete_us": 15644.761111114502
+      },
+      {
+        "rx_start_ns": 61305615625,
+        "response_start_ns": 61309435525,
+        "latency_complete_us": 15712.261111114502
+      },
+      {
+        "rx_start_ns": 61826221000,
+        "response_start_ns": 61830077175,
+        "latency_complete_us": 15748.536111114501
+      },
+      {
+        "rx_start_ns": 62350426025,
+        "response_start_ns": 62354169250,
+        "latency_complete_us": 15635.586111114502
+      },
+      {
+        "rx_start_ns": 62875531150,
+        "response_start_ns": 62882134250,
+        "latency_complete_us": 18495.461111114502
+      },
+      {
+        "rx_start_ns": 63417236425,
+        "response_start_ns": 63422012500,
+        "latency_complete_us": 16668.4361111145
+      },
+      {
+        "rx_start_ns": 63950441675,
+        "response_start_ns": 63954246175,
+        "latency_complete_us": 15696.861111114502
+      },
+      {
+        "rx_start_ns": 64476446825,
+        "response_start_ns": 64482070175,
+        "latency_complete_us": 17515.711111114502
+      },
+      {
+        "rx_start_ns": 65009251950,
+        "response_start_ns": 65012999875,
+        "latency_complete_us": 15640.286111114501
+      },
+      {
+        "rx_start_ns": 66059764075,
+        "response_start_ns": 66063844250,
+        "latency_complete_us": 15972.536111114501
+      },
+      {
+        "rx_start_ns": 66592969950,
+        "response_start_ns": 66596766375,
+        "latency_complete_us": 15688.786111114501
+      },
+      {
+        "rx_start_ns": 67117675100,
+        "response_start_ns": 67122208425,
+        "latency_complete_us": 16425.6861111145
+      },
+      {
+        "rx_start_ns": 67659281000,
+        "response_start_ns": 67663064900,
+        "latency_complete_us": 15676.261111114502
+      },
+      {
+        "rx_start_ns": 68193186375,
+        "response_start_ns": 68197019525,
+        "latency_complete_us": 15725.511111114502
+      },
+      {
+        "rx_start_ns": 68734692350,
+        "response_start_ns": 68738466250,
+        "latency_complete_us": 15666.261111114502
+      },
+      {
+        "rx_start_ns": 69259797650,
+        "response_start_ns": 69263636825,
+        "latency_complete_us": 15731.536111114501
+      },
+      {
+        "rx_start_ns": 69800603000,
+        "response_start_ns": 69804404050,
+        "latency_complete_us": 15693.411111114501
+      },
+      {
+        "rx_start_ns": 70326508425,
+        "response_start_ns": 70330355350,
+        "latency_complete_us": 15739.286111114501
+      },
+      {
+        "rx_start_ns": 70859113575,
+        "response_start_ns": 70862864500,
+        "latency_complete_us": 15643.286111114501
+      },
+      {
+        "rx_start_ns": 71376518850,
+        "response_start_ns": 71381845925,
+        "latency_complete_us": 17219.4361111145
+      },
+      {
+        "rx_start_ns": 71925624625,
+        "response_start_ns": 71929371525,
+        "latency_complete_us": 15639.261111114502
+      },
+      {
+        "rx_start_ns": 72443129325,
+        "response_start_ns": 72446937500,
+        "latency_complete_us": 15700.536111114501
+      },
+      {
+        "rx_start_ns": 72975634750,
+        "response_start_ns": 72981927600,
+        "latency_complete_us": 18185.211111114502
+      },
+      {
+        "rx_start_ns": 73509239625,
+        "response_start_ns": 73513063525,
+        "latency_complete_us": 15716.261111114502
+      },
+      {
+        "rx_start_ns": 74043145000,
+        "response_start_ns": 74046970650,
+        "latency_complete_us": 15718.011111114502
+      },
+      {
+        "rx_start_ns": 74568050300,
+        "response_start_ns": 74571838725,
+        "latency_complete_us": 15680.786111114501
+      },
+      {
+        "rx_start_ns": 75101155950,
+        "response_start_ns": 75104932125,
+        "latency_complete_us": 15668.536111114501
+      },
+      {
+        "rx_start_ns": 75634761325,
+        "response_start_ns": 75638601250,
+        "latency_complete_us": 15732.286111114501
+      },
+      {
+        "rx_start_ns": 76159766625,
+        "response_start_ns": 76163503325,
+        "latency_complete_us": 15629.061111114503
+      },
+      {
+        "rx_start_ns": 76701471875,
+        "response_start_ns": 76705263775,
+        "latency_complete_us": 15684.261111114502
+      },
+      {
+        "rx_start_ns": 77234777250,
+        "response_start_ns": 77238608925,
+        "latency_complete_us": 15724.036111114501
+      }
+    ],
+    "unpaired_or_ambiguous": [],
+    "latency_us": {
+      "min": 15629.061111114503,
+      "mean": 15985.515972225612,
+      "max": 18495.461111114502
+    },
+    "assumption": "FIFO isolated STATUS, no response identity; UART duration estimated nominal 115200 8N1"
+  }
+}

@@ -9,3 +9,5 @@ S1 тривав 120.490 s MCU. S2 має безперервний UART за 3604
 SysTick має крок 1 ms, а пропущені при блокуванні ticks не відновлюються. Stack painting S1/S2/S3 показав 1164/1168/1240 B; heap arena peak був 0 у snapshots, це не гарантія усіх шляхів. Accounted foreground LOAD не є повною CPU utilization. Flash Wokwi повернула 4096 non-FF bytes, 102 damaged slots і full; збереження, фізична плата і brownout не підтверджені. Тести, факти і непідтверджені FR розділено у [звіті PDF](lab3-report.pdf).
 
 [Задачі](tasks.md), [метрики](metrics/README.md), [обмеження](limitations.md), [журнал проблем](lab3-problems.md), [база ЛР4](baseline-lab4.md). Команди: `python3 tools/lab3_build.py`, `make test`, `python3 tools/lab3_host.py`.
+
+Додаткова траса startup та SDA: підключений MPU, SDA LOW до 47.093 s, valid=0, після release SENSOR_RECOVERED. За 36 окремими UART парами STATUS max 18.495 ms до оціненого кінця; під перевантаженням TX/RX dropped=61/194. ADC на спільному вікні 321 виклику: GPIO avg 104.724 us, SysTick avg 183 us при кроці 1 ms та різних межах коду. [Докази й метод](captures/lab3/README.md).

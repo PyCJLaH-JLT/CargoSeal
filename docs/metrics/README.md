@@ -9,3 +9,5 @@
 Перший модельний sweep із втратою відповідей: 80 STATUS/s, 130 dropped за 30 s; 60/s без втрат у цій моделі. 120/s має 1351, 200/s має 3757 втрат. Це межа моделі UART/черги, не виміряна межа USART у Wokwi або реального C031. RX надходить burst-ами, TX 115200 8N1 із округленням до ms. Маніфест фіксує умови.
 
 Власні MCU/Wokwi S1/S2/S3 для ELF 4ed0f50d записані у captures/lab3. S1 120.490 s, S2 UART 3604.624 s, S3 120.078 s за MCU. S2 VCD обмежений до приблизно 146.6 s. Stack S1/S2/S3: 1164/1168/1240 B; heap arena peak 0 у snapshots, не гарантована верхня межа. SysTick квантує до 1 ms; GPIO/VCD має інше вікно і метод. LOAD не охоплює всі ISR і busy spin. Фізичний brownout, flash stall і retention не підтверджено. Результати ЛР2 збережені окремо.
+
+Сумісне вікно 321 ADC release у S3: STAT min/avg/max 0/183/1000 us, ADC_MARK GPIO 89.175/104.724/774.175 us; GPIO обмежує adc_read, STAT охоплює додатковий облік, крок SysTick 1 ms. Деталі та точні межі у `../captures/lab3/S3-2e36-20261030/adc-method-comparison.json`. Окремі startup, SDA LOW/release, 36 UART пар і лічильники втрат наведені у `../captures/lab3/short-20261101/`.

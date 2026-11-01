@@ -1,0 +1,53 @@
+STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=14844 tx_dropped=0 rx_dropped=0
+tick 15
+STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=15251 tx_dropped=0 rx_dropped=0
+STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=15661 tx_dropped=0 rx_dropped=0
+tick 16
+STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=16069 tx_dropped=0 rx_dropped=0
+STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=16468 tx_dropped=0 rx_dropped=0
+STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=16877 tx_dropped=0 rx_dropped=0
+tick 17
+STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=17277 tx_dropped=0 rx_dropped=0
+STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=17686 tx_dropped=0 rx_dropped=0
+tick 18
+STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=18093 tx_dropped=0 rx_dropped=0
+STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=18502 tx_dropped=0 rx_dropped=0
+METRICS build=90392f53-2e36b428364c t_us=35744000 timer=SysTick clock_resolution_us=1000 load_permille=58 load_max_permille=81
+MEMORY stack_used=1164 stack_reserved=2048 heap_peak=0 tx_peak=691 rx_peak=4 tx_dropped=0 rx_dropped=0
+STAT name=loop n=295794 min_us=0 avg_us=113 max_us=11000 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0
+HIST name=loop abs_jitter_bins_us=100,1000,5000,20000,inf counts=0,0,0,0,0
+STAT name=loop_period n=295794 min_us=0 avg_us=120 max_us=11000 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0
+HIST name=loop_period abs_jitter_bins_us=100,1000,5000,20000,inf counts=0,0,0,0,0
+STAT name=imu_pir n=1784 min_us=0 avg_us=196 max_us=10000 late_us=1000 missed=0 deadline=0 jitter_min_us=-1000 jitter_max_us=1000
+HIST name=imu_pir abs_jitter_bins_us=100,1000,5000,20000,inf counts=1781,0,2,0,0
+STAT name=adc n=713 min_us=0 avg_us=0 max_us=0 late_us=10000 missed=0 deadline=0 jitter_min_us=-10000 jitter_max_us=10000
+HIST name=adc abs_jitter_bins_us=100,1000,5000,20000,inf counts=656,0,0,56,0
+STAT name=command n=10 min_us=2000 avg_us=2800 max_us=3000 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0
+HIST name=command abs_jitter_bins_us=100,1000,5000,20000,inf counts=0,0,0,0,0
+STAT name=flash n=0 min_us=0 avg_us=0 max_us=0 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0
+HIST name=flash abs_jitter_bins_us=100,1000,5000,20000,inf counts=0,0,0,0,0
+STAT name=lf_dispatch n=11 min_us=0 avg_us=90 max_us=1000 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0
+HIST name=lf_dispatch abs_jitter_bins_us=100,1000,5000,20000,inf counts=0,0,0,0,0
+STAT name=tx_service n=62 min_us=0 avg_us=80 max_us=1000 late_us=0 missed=0 deadline=0 jitter_min_us=0 jitter_max_us=0
+HIST name=tx_service abs_jitter_bins_us=100,1000,5000,20000,inf counts=0,0,0,0,0
+tick 36
+STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=36261 tx_dropped=0 rx_dropped=0
+STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=36794 tx_dropped=0 rx_dropped=0
+tick 37
+STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=37294 tx_dropped=0 rx_dropped=0
+STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=37794 tx_dropped=0 rx_dropped=0
+tick 38
+STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=38311 tx_dropped=0 rx_dropped=0
+STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=38811 tx_dropped=0 rx_dropped=0
+tick 39
+STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=39319 tx_dropped=0 rx_dropped=0
+STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=39836 tx_dropped=0 rx_dropped=0
+tick 40
+STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=40369 tx_dropped=0 rx_dropped=0
+STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=40869 tx_dropped=0 rx_dropped=0
+tick 41
+STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=41369 tx_dropped=0 rx_dropped=0
+STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=41877 tx_dropped=0 rx_dropped=0
+tick 42
+STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=42394 tx_dropped=0 rx_dropped=0
+STATUS mode=INSTALLED alarm=0 imu_valid=0 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=42898 tx_dropped=0 rx_dropped=0

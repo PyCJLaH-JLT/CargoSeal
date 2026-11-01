@@ -1,0 +1,49 @@
+{
+  "vcd_sha256": "b1ffe6d05d2cf61e2b62988eef6c36461c5528ebef0dbdb3b7002fc4d96730a6",
+  "build_id": "90392f53-2e36b428364c",
+  "window": "first 321 periodic ADC releases after startup adc_read, before STATS snapshot t_us=16139000; snapshot UART starts at 16170136725 ns; no further ADC edge between last matched pulse and METRICS line",
+  "first_edge_ns": 96397975,
+  "last_end_ns": 16096152700,
+  "firmware_metric": {
+    "time_ns": 16170136725,
+    "text": "METRICS build=90392f53-2e36b428364c t_us=16139000 timer=SysTick clock_resolution_us=1000 load_permille=172 load_max_permille=219"
+  },
+  "firmware_adc_stat": {
+    "time_ns": 16293786750,
+    "text": "STAT name=adc n=321 min_us=0 avg_us=183 max_us=1000 late_us=2000 missed=0 deadline=0 jitter_min_us=-2000 jitter_max_us=2000"
+  },
+  "gpio_adc_width_us": {
+    "n": 321,
+    "min": 89.175,
+    "mean": 104.72422118380062,
+    "max": 774.175
+  },
+  "limits": "GPIO brackets adc_read; firmware interval also includes cs_perf_release and scheduling/accounting outside probe. SysTick is quantized 1000 us, so per-event bounds and averages differ. Matching sample count plus adjacent edge bounds identifies window, not simultaneous probes of identical code boundaries.",
+  "startup_uart": [
+    {
+      "time_ns": 47606125,
+      "text": "STM32C031C6 ready"
+    },
+    {
+      "time_ns": 49499375,
+      "text": "BOOT CargoSeal build=90392f53-2e36b428364c mode=INSTALLED imu_period_ms=20 adc_period_ms=50 timer=SysTick clock_resolution_us=1000 journal=internal_flash"
+    },
+    {
+      "time_ns": 82851200,
+      "text": "SELFTEST device=MPU6050 valid=1 result=0 address=0x68 accel_range_g=8 gyro_range_dps=250"
+    },
+    {
+      "time_ns": 94668400,
+      "text": "SELFTEST device=PIR gpio_readable=1 high=0"
+    },
+    {
+      "time_ns": 99053000,
+      "text": "SELFTEST device=LDR adc_valid=1 raw=4063 baseline_ready=0"
+    },
+    {
+      "time_ns": 997434825,
+      "text": "CALIBRATION time_ms=993 samples=20 E0=32 unit=ADC_code ready=1"
+    }
+  ],
+  "startup_limits": "UART line start, not the physical sensor ready instant; first ADC and IMU transaction VCD required for wire timing; no connected not-ready fixture in this capture."
+}
