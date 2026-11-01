@@ -1,0 +1,37 @@
+0x0800015e in cs_ms_to_us (ms=<optimized out>) at Board/diagnostics.c:2
+warning: 2	Board/diagnostics.c: No such file or directory
+INITIAL REGISTERS AND FLASH
+r0             0x47c               1148
+r1             0x0                 0
+r2             0x0                 0
+r3             0x47c               1148
+r4             0x20000098          536871064
+r5             0x20000218          536871448
+r6             0xfa                250
+r7             0x6b96              27542
+r8             0xffffffff          -1
+r9             0xffffffff          -1
+r10            0xffffffff          -1
+r11            0xffffffff          -1
+r12            0x0                 0
+sp             0x20002ee0          0x20002ee0
+lr             0x800501d           134238237
+pc             0x800015e           0x800015e <runtime_ms+6>
+xpsr           0x21000000          553648128
+msp            0x20002ee0          0x20002ee0
+psp            0xfffffffc          0xfffffffc
+primask        0x0                 0
+basepri        0x0                 0
+faultmask      0x0                 0
+control        0x0                 0
+0x40022000:	0x00000001	0x00000000	0x00000000	0x00000000
+0x40022010:	0x00000000	0x00000000	0x00000000	0x00000000
+Hardware assisted breakpoint 1 at 0x8001468: file Board/log_medium.c, line 29.
+Warning:
+Cannot insert hardware breakpoint 1.
+Could not insert hardware breakpoints:
+You may have requested too many hardware breakpoints/watchpoints.
+
+/work/gdb-erase.gdb:24: Error in sourced command file:
+Command aborted.
+Remote doesn't know how to detach

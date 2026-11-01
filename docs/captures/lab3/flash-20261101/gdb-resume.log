@@ -1,0 +1,8 @@
+0x0800015e in cs_ms_to_us (ms=<optimized out>) at Board/diagnostics.c:2
+warning: 2	Board/diagnostics.c: No such file or directory
+pc             0x800015e           0x800015e <runtime_ms+6>
+r0             0x47c               1148
+r4             0x20000098          536871064
+0x40022000:	0x00000001	0x00000000	0x00000000	0x00000000
+0x40022010:	0x00000000	0x00000000	0x00000000	0x00000000
+Remote connection closed

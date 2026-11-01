@@ -1,0 +1,82 @@
+{
+  "build_id": "90392f53-2e36b428364c",
+  "source_digest": "2e36b428364c4ff6e133ace4ec18829e669633edb3b7360aa2dc0225aec11e0e",
+  "firmware_kind": "same measured firmware as S1/S2/S3; this is a diagnostic run, not a diagnostic build",
+  "files": {
+    "firmware.elf": {
+      "sha256": "4ed0f50d97b74b8b4ba2bb74a5432d72f866ca0757d987942e3dc1519fe7cb99",
+      "bytes": 477776,
+      "stored_as": "firmware.elf"
+    },
+    "firmware.hex": {
+      "sha256": "f58f338478d0ec680e9b86b99606d1ed6716295e95017a17d4317f7d4ad368bf",
+      "bytes": 77122,
+      "stored_as": "firmware.hex"
+    },
+    "diagram.json": {
+      "sha256": "abdd01df1400f37c42b7cd8fb1304ab8feffc42f0d08908a9b1197a33049625c",
+      "bytes": 3303,
+      "stored_as": "diagram.json"
+    },
+    "wokwi.toml": {
+      "sha256": "b7aeee1e12a874fcf4347d4935fb52f1b7f293643a97ecbb783c834edca1b708",
+      "bytes": 143,
+      "stored_as": "wokwi.toml"
+    },
+    "commands.jsonl": {
+      "sha256": "f9a53ce8f27e5555c1acba78f49576d44ff8fa7933de54623fdfca133c155128",
+      "bytes": 240,
+      "stored_as": "commands.jsonl"
+    },
+    "decoded-flash.json": {
+      "sha256": "373686e3a0a41fc524ef059bd026ce32aeea382763d07f58c6c9e4139eb14849",
+      "bytes": 7685,
+      "stored_as": "decoded-flash.json"
+    },
+    "gdb-erase.gdb": {
+      "sha256": "72f0fc70d1aa6a31eb26ef4c82e32c1b6f307ba243166ce363ee6e59fb9cdf8e",
+      "bytes": 579,
+      "stored_as": "gdb-erase.gdb"
+    },
+    "gdb-erase.log": {
+      "sha256": "909e5d2eec588f7d4f27ae4532ce1812f5a6f597372a6fa40391d752af5e71b6",
+      "bytes": 1556,
+      "stored_as": "gdb-erase.log"
+    },
+    "gdb-resume.log": {
+      "sha256": "3531c0e838168d4bc78559dd10260457b767788d78e50db494dc124db3963ba0",
+      "bytes": 412,
+      "stored_as": "gdb-resume.log"
+    },
+    "nvm-before.bin": {
+      "sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+      "bytes": 4096,
+      "stored_as": "nvm-before.bin"
+    },
+    "nvm-after.bin": {
+      "sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+      "bytes": 4096,
+      "stored_as": "nvm-after.bin"
+    },
+    "collect-flash.py": {
+      "sha256": "79ce63289a925592b1b68a242a4bf08174f1cc1328f94adb35f0c247b7810954",
+      "bytes": 995,
+      "stored_as": "collect-flash.py"
+    },
+    "flash-check.vcd": {
+      "sha256": "6ae167c2108a3743d5bede1b6dfb0bf6aefb973e61ecfd1a84d5cde800991d2e",
+      "bytes": 53108991,
+      "stored_as": "flash-check.vcd.gz"
+    },
+    "uart.raw": {
+      "sha256": "44fd9de12d1ed868e5f5bb30b9740c3994a6f22c013704af4d59af9688b9dc6c",
+      "bytes": 402,
+      "stored_as": "uart.raw.gz"
+    },
+    "uart-continuation.raw": {
+      "sha256": "2872902433fbce20cfdee4f98a1112fbdb6e250a1964b87728cf06c27e40d6d0",
+      "bytes": 54,
+      "stored_as": "uart-continuation.raw.gz"
+    }
+  }
+}

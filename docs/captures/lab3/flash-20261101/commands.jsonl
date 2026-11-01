@@ -1,0 +1,4 @@
+{"host_monotonic": 234134.14638375, "command": "STATUS"}
+{"host_monotonic": 234136.2454145, "command": "LOG STATUS"}
+{"host_monotonic": 234142.867429791, "command": "LOG ERASE"}
+{"host_monotonic": 234152.926223833, "command": "LOG STATUS"}

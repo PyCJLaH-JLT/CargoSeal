@@ -1,0 +1,7 @@
+[wokwi]
+version = 1
+firmware = 'firmware.hex'
+elf = 'firmware.elf'
+rfc2217ServerPort = 50841
+gdbServerPort = 50842
+vcdFile = 'flash-check.vcd'

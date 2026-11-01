@@ -1,0 +1,407 @@
+{
+  "uart_tx_lines": [
+    {
+      "time_ns": 47606125,
+      "text": "STM32C031C6 ready"
+    },
+    {
+      "time_ns": 49499375,
+      "text": "BOOT CargoSeal build=90392f53-2e36b428364c mode=INSTALLED imu_period_ms=20 adc_period_ms=50 timer=SysTick clock_resolution_us=1000 journal=internal_flash"
+    },
+    {
+      "time_ns": 65411100,
+      "text": "LOG boot=1 valid=0 damaged=102 next=102 capacity=102 pending=0 committed=0 dropped=0 failed=0 failures=0 full=1"
+    },
+    {
+      "time_ns": 77071500,
+      "text": "MEDIUM checked=4096 non_ff=4096 first=0 first_value=0x00"
+    },
+    {
+      "time_ns": 82851200,
+      "text": "SELFTEST device=MPU6050 valid=1 result=0 address=0x68 accel_range_g=8 gyro_range_dps=250"
+    },
+    {
+      "time_ns": 94668400,
+      "text": "SELFTEST device=PIR gpio_readable=1 high=0"
+    },
+    {
+      "time_ns": 99053000,
+      "text": "SELFTEST device=LDR adc_valid=1 raw=4063 baseline_ready=0"
+    },
+    {
+      "time_ns": 997415575,
+      "text": "CALIBRATION time_ms=993 samples=20 E0=32 unit=ADC_code ready=1"
+    },
+    {
+      "time_ns": 1046718550,
+      "text": "tick 1"
+    },
+    {
+      "time_ns": 2046682725,
+      "text": "tick 2"
+    },
+    {
+      "time_ns": 3046663150,
+      "text": "tick 3"
+    },
+    {
+      "time_ns": 4046668050,
+      "text": "tick 4"
+    },
+    {
+      "time_ns": 5046787150,
+      "text": "tick 5"
+    },
+    {
+      "time_ns": 6049616025,
+      "text": "tick 6"
+    },
+    {
+      "time_ns": 7049673250,
+      "text": "tick 7"
+    },
+    {
+      "time_ns": 8049619425,
+      "text": "tick 8"
+    },
+    {
+      "time_ns": 9049591325,
+      "text": "tick 9"
+    },
+    {
+      "time_ns": 10049633500,
+      "text": "tick 10"
+    },
+    {
+      "time_ns": 11049602650,
+      "text": "tick 11"
+    },
+    {
+      "time_ns": 12049509575,
+      "text": "tick 12"
+    },
+    {
+      "time_ns": 13049472000,
+      "text": "tick 13"
+    },
+    {
+      "time_ns": 14049537400,
+      "text": "tick 14"
+    },
+    {
+      "time_ns": 15049433325,
+      "text": "tick 15"
+    },
+    {
+      "time_ns": 16049433500,
+      "text": "tick 16"
+    },
+    {
+      "time_ns": 17049410650,
+      "text": "tick 17"
+    },
+    {
+      "time_ns": 18049377325,
+      "text": "tick 18"
+    },
+    {
+      "time_ns": 18958519150,
+      "text": "STATUS mode=INSTALLED alarm=0 imu_valid=1 adc_raw=4063 adc_valid=1 light_ready=1 E0=32 E=32 pir=0 uptime_ms=18952 tx_dropped=0 rx_dropped=0"
+    },
+    {
+      "time_ns": 19049390250,
+      "text": "tick 19"
+    },
+    {
+      "time_ns": 20049384900,
+      "text": "tick 20"
+    },
+    {
+      "time_ns": 21049401075,
+      "text": "tick 21"
+    },
+    {
+      "time_ns": 21073012075,
+      "text": "LOG boot=1 valid=0 damaged=102 next=102 capacity=102 pending=0 committed=0 dropped=0 failed=0 failures=0 full=1"
+    },
+    {
+      "time_ns": 21084270125,
+      "text": "MEDIUM checked=4096 non_ff=4096 first=0 first_value=0x00"
+    },
+    {
+      "time_ns": 22049397750,
+      "text": "tick 22"
+    },
+    {
+      "time_ns": 23049294425,
+      "text": "tick 23"
+    },
+    {
+      "time_ns": 24049309325,
+      "text": "tick 24"
+    },
+    {
+      "time_ns": 25049329000,
+      "text": "tick 25"
+    },
+    {
+      "time_ns": 26049245675,
+      "text": "tick 26"
+    },
+    {
+      "time_ns": 27049267575,
+      "text": "tick 27"
+    },
+    {
+      "time_ns": 27581266000,
+      "text": "LOG ERASE ok=0 duration_us=14000"
+    },
+    {
+      "time_ns": 27584651700,
+      "text": "LOG boot=1 valid=0 damaged=102 next=102 capacity=102 pending=0 committed=0 dropped=0 failed=1 failures=1 full=1"
+    },
+    {
+      "time_ns": 27596360800,
+      "text": "MEDIUM checked=4096 non_ff=4096 first=0 first_value=0x00"
+    },
+    {
+      "time_ns": 27602140500,
+      "text": "ERR COMMAND"
+    },
+    {
+      "time_ns": 27603435950,
+      "text": "STORAGE_FAULT failures=1 pending=0"
+    },
+    {
+      "time_ns": 28049242250,
+      "text": "tick 28"
+    },
+    {
+      "time_ns": 29049231425,
+      "text": "tick 29"
+    },
+    {
+      "time_ns": 30049143825,
+      "text": "tick 30"
+    },
+    {
+      "time_ns": 31049143250,
+      "text": "tick 31"
+    },
+    {
+      "time_ns": 32049118675,
+      "text": "tick 32"
+    },
+    {
+      "time_ns": 33049116325,
+      "text": "tick 33"
+    },
+    {
+      "time_ns": 34049076750,
+      "text": "tick 34"
+    },
+    {
+      "time_ns": 35049023675,
+      "text": "tick 35"
+    },
+    {
+      "time_ns": 36049067325,
+      "text": "tick 36"
+    },
+    {
+      "time_ns": 37049022250,
+      "text": "tick 37"
+    },
+    {
+      "time_ns": 38048975925,
+      "text": "tick 38"
+    },
+    {
+      "time_ns": 39048958075,
+      "text": "tick 39"
+    },
+    {
+      "time_ns": 40048937500,
+      "text": "tick 40"
+    },
+    {
+      "time_ns": 41049000425,
+      "text": "tick 41"
+    },
+    {
+      "time_ns": 42048956575,
+      "text": "tick 42"
+    },
+    {
+      "time_ns": 43048944750,
+      "text": "tick 43"
+    },
+    {
+      "time_ns": 44048956150,
+      "text": "tick 44"
+    },
+    {
+      "time_ns": 45048819575,
+      "text": "tick 45"
+    },
+    {
+      "time_ns": 46048857000,
+      "text": "tick 46"
+    },
+    {
+      "time_ns": 47048849650,
+      "text": "tick 47"
+    },
+    {
+      "time_ns": 48048849825,
+      "text": "tick 48"
+    },
+    {
+      "time_ns": 49048792000,
+      "text": "tick 49"
+    },
+    {
+      "time_ns": 50048750900,
+      "text": "tick 50"
+    },
+    {
+      "time_ns": 51048739325,
+      "text": "tick 51"
+    },
+    {
+      "time_ns": 52048752750,
+      "text": "tick 52"
+    },
+    {
+      "time_ns": 53048736150,
+      "text": "tick 53"
+    },
+    {
+      "time_ns": 54048648825,
+      "text": "tick 54"
+    },
+    {
+      "time_ns": 55048651250,
+      "text": "tick 55"
+    },
+    {
+      "time_ns": 56048688400,
+      "text": "tick 56"
+    },
+    {
+      "time_ns": 57048680825,
+      "text": "tick 57"
+    },
+    {
+      "time_ns": 58048599500,
+      "text": "tick 58"
+    },
+    {
+      "time_ns": 59048596900,
+      "text": "tick 59"
+    },
+    {
+      "time_ns": 60048536825,
+      "text": "tick 60"
+    },
+    {
+      "time_ns": 61048535250,
+      "text": "tick 61"
+    },
+    {
+      "time_ns": 62048506400,
+      "text": "tick 62"
+    },
+    {
+      "time_ns": 63048495575,
+      "text": "tick 63"
+    },
+    {
+      "time_ns": 64048478250,
+      "text": "tick 64"
+    },
+    {
+      "time_ns": 65048468150,
+      "text": "tick 65"
+    },
+    {
+      "time_ns": 66048431825,
+      "text": "tick 66"
+    },
+    {
+      "time_ns": 67048359750,
+      "text": "tick 67"
+    },
+    {
+      "time_ns": 68048398150,
+      "text": "tick 68"
+    },
+    {
+      "time_ns": 69048335575,
+      "text": "tick 69"
+    },
+    {
+      "time_ns": 70048291250,
+      "text": "tick 70"
+    },
+    {
+      "time_ns": 71048278400,
+      "text": "tick 71"
+    },
+    {
+      "time_ns": 72048258325,
+      "text": "tick 72"
+    },
+    {
+      "time_ns": 73048329000,
+      "text": "tick 73"
+    },
+    {
+      "time_ns": 74048283400,
+      "text": "tick 74"
+    },
+    {
+      "time_ns": 75048274825,
+      "text": "tick 75"
+    },
+    {
+      "time_ns": 76048285000,
+      "text": "tick 76"
+    },
+    {
+      "time_ns": 77048147650,
+      "text": "tick 77"
+    },
+    {
+      "time_ns": 78048186575,
+      "text": "tick 78"
+    },
+    {
+      "time_ns": 79048185500,
+      "text": "tick 79"
+    },
+    {
+      "time_ns": 80048186150,
+      "text": "tick 80"
+    },
+    {
+      "time_ns": 81048127325,
+      "text": "tick 81"
+    }
+  ],
+  "flash_marker_transitions": [
+    [
+      0,
+      0
+    ],
+    [
+      27549304600,
+      1
+    ],
+    [
+      27562782125,
+      0
+    ]
+  ],
+  "vcd_end_ns": 81238230625
+}

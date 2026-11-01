@@ -11,3 +11,5 @@ SysTick має крок 1 ms, а пропущені при блокуванні 
 [Задачі](tasks.md), [метрики](metrics/README.md), [обмеження](limitations.md), [журнал проблем](lab3-problems.md), [база ЛР4](baseline-lab4.md). Команди: `python3 tools/lab3_build.py`, `make test`, `python3 tools/lab3_host.py`.
 
 Додаткова траса startup та SDA: підключений MPU, SDA LOW до 47.093 s, valid=0, після release SENSOR_RECOVERED. За 36 окремими UART парами STATUS max 18.495 ms до оціненого кінця; під перевантаженням TX/RX dropped=61/194. ADC на спільному вікні 321 виклику: GPIO avg 104.724 us, SysTick avg 183 us при кроці 1 ms та різних межах коду. [Докази й метод](captures/lab3/README.md).
+
+У [короткому Wokwi-тесті Flash](captures/lab3/flash-20261101/README.md) того самого ELF команда LOG ERASE повернула ok=0, STORAGE_FAULT; наступний scan: 4096 non-FF bytes. Точний статус HAL та повний дамп після виконання не отримано; причина відмови невідома. FLASH_MARK у VCD тривав 13.478 ms під debugger, що не є виміром успішного стирання або фізичної flash.
